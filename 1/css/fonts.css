@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/helvetica_regular.otf") format("opentype");
+}
+
+.font-helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
