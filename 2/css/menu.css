@@ -1,0 +1,22 @@
+.header-nav.opened {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: #EBEBEB;
+  height: 389px;
+  padding-top: 15px;
+  gap: 22px;
+}
+
+.header-nav.opened > .nav-list-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.header-nav.opened .nav-link {
+  font-size: 18px;
+  line-height: 21px;
+  background: none;
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.text-btn {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #4C5866;
+  background-color: #fff;
+}
+
+.text-btn:focus {
+  color: #4C5866;
+  background-color: #DAD9FB;
+}
+
+.text-btn:hover {
+  color: #7875FE;
+}
+
+.text-btn:active {
+  color: #4946B4;
+}
+
+
+.btn-secondary {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  padding: 20px 50px;
+  color: #7875FE;
+  border: 1px solid #7875FE;
+  background-color: #fff;
+}
+
+.btn-secondary:active {
+  background-color: #4946B4;
+  border-color: #4946B4;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #7875FE;
+}
+
+.btn-secondary:focus {
+  border-color: #7875FE;
+  background-color: #DAD9FB;
+  color: #7875FE;
+}
+
+
+.txt-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #7875FE;
+  background-color: #fff;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
+}
+
+.txt-btn:focus {
+  color: #7875FE;
+  background-color: #DAD9FB;
+}
+
+.txt-btn:focus > svg > path {
+  fill: #7875FE;
+}
+
+.txt-btn:hover {
+  color: #4946B4;
+}
+
+.txt-btn:hover > svg > path {
+  fill: #4946B4;
+}
+
+.txt-btn:active {
+  color: #4946B4;
+}
+
+.text-btn:active > svg > path {
+  fill: #4946B4;
+}
+
+
+.escape {
+  background: none;
+  border: none;
+}
+
+
+.log-in {
+  background: none;
+  border: none;
+  padding: 0px;
+}
+
+.log-in:hover > svg > path {
+  stroke: #7875FE;
+}
+
+.log-in:focus {
+  background-color: #DAD9FB;
+}
+
+.log-in:focus > svg > path {
+  stroke: #7875FE;
+}
+
+.log-in:active > svg > path {
+  stroke: #4946B4;
+}
+
+
+.search {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.search-img {
+  width: 24px;
+  height: 24px;
+}
+
+.search-img:hover > path {
+  stroke: #7875FE;
+}
+
+.search-btn:focus {
+  background-color: #DAD9FB;
+}
+
+.search-btn:focus > .search-img > path {
+  stroke: #7875FE;
+}
+
+.search-btn:active {
+  background: none;
+}
+
+.search-btn:active > .search-img > path {
+  stroke: #4946B4;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #D1D1E5;
+}
+
+.search-input {
+  width: 180px;
+}
+
+.search-input {
+  font-size: 20px;
+  color: #4C5866;
+}
+
+.search-input::placeholder {
+  font-size: 20px;
+  color: #D1D1E5;
+}
+
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.social:hover > svg > g > path {
+  fill: #DAD9FB;
+}
+
+.social:focus > svg > g > path {
+  fill: #fff;
+}
+
+.social:focus {
+  background-color: #7875FE;
+}
+
+.social:active > svg > g > path {
+  fill: #7875FE;
+}
+
+.social:active {
+  background-color: none;
+}
