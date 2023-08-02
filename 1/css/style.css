@@ -5,6 +5,7 @@
 .container {
   margin-left: 32px;
   margin-right: 32px;
+  width: calc(100% - 32px -32px);
 }
 
 /* Header */
