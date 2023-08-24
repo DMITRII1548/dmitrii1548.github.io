@@ -1456,6 +1456,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 568px) {
+  .footer__bottom > .container {
+    display: grid;
+    row-gap: 24px;
+  }
+}
 
 .footer__company {
   color: #fff;
