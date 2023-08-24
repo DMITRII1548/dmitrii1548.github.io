@@ -117,7 +117,12 @@
 .footer__bottom {
     &>.container {
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;    
+        
+        @include mediaTablet {
+            display: grid;
+            row-gap: 24px;
+        }
     }
     background-color: $footerSecondary;
 
