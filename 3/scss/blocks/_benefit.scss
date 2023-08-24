@@ -1,0 +1,30 @@
+.benefit {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    @include mediaLaptop {
+        align-items: flex-start;
+        max-width: 400px;
+    }
+}
+
+.benefit__info {
+    display: grid;
+    row-gap: 4px;
+}
+
+.benefit__title {
+    color: $textColor;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.111111;
+    letter-spacing: 0.216px;
+}
+
+.benefit__text {
+    color: $black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+}

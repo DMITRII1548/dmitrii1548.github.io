@@ -1,0 +1,25 @@
+.btn {
+    z-index: 9;
+    padding: 12px 24px;
+    border: 1px solid $buttonColor;
+    border-radius: 4px;
+    background: $buttonColor;
+
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.192px;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        border: 1px solid $buttonColor;
+        background: $white;
+        color: $buttonColor;
+    }
+
+    &--big {
+        padding: 16px 36px;
+    }
+}

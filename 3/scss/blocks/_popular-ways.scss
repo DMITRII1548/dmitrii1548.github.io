@@ -1,0 +1,56 @@
+.popular-ways {
+    display: grid;
+    row-gap: 50px;
+
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    @include mediaLaptop {
+        padding: 50px 0;
+
+        row-gap: 32px;
+    }
+}
+
+.popular-ways__titles {
+    display: grid;
+    row-gap: 8px;
+
+    text-align: center;
+    width: 100%;
+
+    @include mediaLaptop {
+        text-align: left;
+    }
+}
+
+.popular-ways__cards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    
+
+    @include mediaLaptop {
+        display: flex;
+
+        width: 100%;
+
+        overflow: hidden;
+        overflow-x: scroll;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.popular-ways > .btn {
+    width: 246px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    &>.btn {
+        padding: 12px 24px;
+    }
+}
