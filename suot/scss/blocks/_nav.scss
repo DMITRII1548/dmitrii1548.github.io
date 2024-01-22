@@ -1,0 +1,51 @@
+.nav {
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.nav--opened {
+    @include mediaTablet {
+        display: block;
+        // position: absolute;
+        background: #fff;
+        z-index: 999;
+        margin-top: 16px;
+
+        &>.nav__list {
+            display: grid;
+            row-gap: 16px;
+        }
+
+        & .btn {
+            width: 275px;
+        }
+    }
+
+    @media screen and (max-height: 479px) {
+        &>.nav__list {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        & .btn {
+            width: 100px;
+        }
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+
+    @include mediaLaptop {
+        column-gap: 20px;
+    }
+}
+
+.nav__link {
+    &:hover {
+        color: #000;
+    }
+}

@@ -1,0 +1,45 @@
+.prices {
+    display: grid;
+    row-gap: 64px;
+    padding-bottom: 120px;
+
+    @include mediaTablet {
+        row-gap: 40px;
+
+        padding-bottom: 40px;
+    }
+}
+
+.prices__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include mediaTablet {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}
+
+.prices__title {
+    width: 515px;
+
+    @include mediaTablet {
+        width: auto;
+        max-width: 515px;
+        min-width: 200px;
+    }
+}
+
+.prices__contacts {
+    display: grid;
+    row-gap: 16px;
+
+    @include mediaTablet {
+        row-gap: 8px;
+
+        &> .txt {
+            display: grid;
+        }
+    }
+}

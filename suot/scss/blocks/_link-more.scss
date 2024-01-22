@@ -1,0 +1,52 @@
+.link-more {
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    gap: 8px;
+    font-family: $fontMontserrat;
+
+    &>span {
+        width: auto;
+
+        font-size: 16px;
+        font-weight: 700;    
+        background: var(--Prim, linear-gradient(209deg, #F59C36 30.9%, #DB8C30 87.78%));
+        background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;  
+    }
+
+    &:hover {
+        &>span {
+            background: linear-gradient(209deg, #D98A2E 30.9%, #DB8C30 87.78%);
+            background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+        }
+
+        &>svg > defs > linearGradient > stop:first-child {
+            stop-color: #D98A2E;
+        }
+
+        &>svg > defs > linearGradient >stop:last-child {
+            stop-color: #DB8C30;
+        }
+    }
+
+    &:active {
+        &>span {
+            background: linear-gradient(209deg, #FE8A05 30.9%, #DB8C30 87.78%);
+            background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+        }
+
+        &>svg > defs > linearGradient > stop:first-child {
+            stop-color: #FE8A05;
+        }
+
+        &>svg > defs > linearGradient >stop:last-child {
+            stop-color: #DB8C30;
+        }
+    }
+}

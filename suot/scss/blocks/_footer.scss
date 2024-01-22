@@ -1,0 +1,136 @@
+.footer {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 145px;
+    background: $footerBg;
+    padding-top: 40px;
+    padding-bottom: 56px;
+
+    @include mediaLaptop {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    @include mediaTablet {
+        background: #fff;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    column-gap: 100px;
+
+    @include mediaTablet {
+        display: grid;
+        row-gap: 40px;
+        width: 100%;
+    }
+}
+
+.footer__col {
+    display: grid;
+    justify-items: start;
+    row-gap: 24px;
+
+    &:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &:last-child > .btn {
+        width: 230px;
+        height: 45px;
+
+        @include mediaTablet {
+            width: 100%;
+        }
+    }
+
+    @include mediaTablet {
+        &>b {
+            width: 100%;
+            grid-area: title;
+            border-bottom: 1px solid $lines;
+            padding-bottom: 16px;
+        }
+
+        &.link {
+            grid-area: link;
+        }
+
+        &--2 {
+            &>.link--1 {
+                grid-area: telegram;
+            }
+
+            &>.link--2 {
+                grid-area: link2;
+            }
+
+            &>.link--3 { 
+                grid-area: link3;
+            }
+
+            grid-template-areas: "title title"
+                "telegram telegram"
+                "link2 link3"
+                "btn btn";
+
+            &> .btn {
+                width: 100%;
+                grid-area: btn;
+            }
+        }
+
+        &--3 {
+            &>.link--1 {
+                grid-area: link1;
+            }
+
+            &>.link--2 {
+                grid-area: link2;
+            }
+
+            &>.link--3 {
+                grid-area: link3;
+            }
+
+            &>.footer__socials {
+                grid-area: socials;
+            }
+
+            grid-template-areas: "title title"
+                "link1 link2"
+                "link3 link3"
+                "socials socials";
+        }
+
+        &--4 {
+            display: none;
+        }
+
+        grid-template-areas: "title title"
+        "link link";
+        column-gap: 20px;
+    }
+}
+
+.footer__col--4 {
+    @include mediaTablet {
+        &>b {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer__socials img {
+    width: 31px;
+    height: 31px;
+}

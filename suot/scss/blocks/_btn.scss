@@ -1,0 +1,28 @@
+.btn {
+    display: inline-flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid $lines;
+    color: $bodyBlack;
+    font-size: 14px;
+
+    &--primary {
+        background: linear-gradient(209deg, $prim 30.9%, $primSec 87.78%);
+        border-color: linear-gradient(209deg, $prim 30.9%, $primSec 87.78%);
+        padding: 16px 24px;
+        color: white;
+
+        &:hover {
+            background: linear-gradient(209deg, #CD7E24 30.9%, #DB8C30 87.78%);
+            border-color: linear-gradient(209deg, #CD7E24 30.9%, #DB8C30 87.78%);
+        }
+
+        &:active {
+            background: linear-gradient(209deg, #F59C36 30.9%, #F80 87.78%);
+            border-color: linear-gradient(209deg, #F59C36 30.9%, #F80 87.78%);
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.header {
+    display: grid;
+    padding-top: 24px;
+    column-gap: 16px;
+
+    @include mediaTablet {
+        padding-top: 0px;
+    }
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(black, 0.1);
+
+    @include mediaTablet {
+        display: none;
+        padding-top: 24px;
+    }
+}
+
+.header__geo {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.header__geo--opened {
+    display: none;
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    
+    &>a {
+        color: $bodyBlack;
+    }
+
+    &--opened {
+        display: none;
+    }
+}
+
+.header__socials {
+    display: flex;
+    column-gap: 16px;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+
+    @include mediaTablet {
+        align-items: center;
+        padding-top: 26px;
+
+        &--opened {
+            display: grid;
+            align-content: start;
+            margin-top: 0;
+
+            position: fixed;
+            width: 311px;
+            height: 100vh;
+            background: #fff;
+            z-index: 999;
+
+            &>img {
+                z-index: 9999;
+            }
+
+            &>.header__logo {
+                position: absolute;
+                top: 20px;
+                left: 0px;
+            }
+
+            &>.header__btn {
+                position: absolute;
+                top: 28px;
+                right: 16px;
+            }
+
+            &>.header__geo--opened {
+                display: flex;
+                margin-top: 64px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $lines;
+                padding-right: 111px;
+            }
+
+            &>.header__contacts--opened {
+                display: grid;
+                row-gap: 16px;
+                margin-top: 24px;
+
+                &>.header__socials {
+                    margin-top: 8px;
+                    column-gap: 24px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-height: 479px) {
+        & .header__contacts {
+            display: none;
+        }
+    }
+}
+
+.header__btn {
+    display: none;
+    cursor: pointer;
+    @include mediaTablet {
+        display: block;
+    }
+}
+
