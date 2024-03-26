@@ -1,0 +1,26 @@
+.contacts-title {
+    padding-top: 127px;
+    padding-bottom: 74px;
+
+    @include mediaTablet {
+        padding-top: 132px;
+        padding-bottom: 54px;
+    }
+
+    @include mediaMobile {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+}
+
+.contacts-title__title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.966666;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+    @include mediaMobile {
+        font-size: 20px;
+    }
+}
