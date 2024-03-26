@@ -1,0 +1,56 @@
+.nav {
+    padding-top: 67px;
+    padding-bottom: 60px;
+    
+    @include mediaTablet {
+        padding: 0;
+    }
+}
+
+.nav__list {
+    display: flex;
+    gap: 30px;
+
+    @include mediaLaptop {
+        gap: 20px;
+    }
+
+    @include mediaMobile {
+        gap: 14px;
+    }
+}
+
+.nav__link {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8;
+
+    @include mediaLaptop {
+        font-size: 18px;
+    }
+
+    @include mediaTablet {
+        font-size: 22px;
+    }
+
+    @include mediaMobile {
+        font-size: 12px;
+    }
+}
+
+.nav__link--active {
+    font-weight: 700;
+}
+
+.nav__link--active:hover {
+    opacity: 1 !important;
+}
+
+.nav__link, .nav__link--active {
+    color: $color-text;
+    transition: all 0.2s ease-in;
+}
+
+.nav__link:hover {
+    opacity: 0.7;
+}

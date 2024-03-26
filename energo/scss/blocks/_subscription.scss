@@ -1,0 +1,60 @@
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 76px;
+
+    padding-top: 132px;
+    padding-bottom: 99px;
+
+    background-color: $color-bg-secondary;
+
+    @include mediaTablet {
+        padding-top: 100px;
+        padding-bottom: 58px;
+
+        gap: 50px;
+    }
+
+    @include mediaMobile {
+        padding-top: 40px;
+        padding-bottom: 63px;
+        gap: 19px;
+    }
+}
+
+.subscription__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.966666;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+    @include mediaTablet {
+        font-size: 16px;
+    }
+}
+
+.subscription__btn {
+    padding: 10px 40px;
+    box-shadow: 0px 4px 60px 0px #3E82FC59;
+    background-color: $color-btn;
+    color: $color-text-secondary;
+
+    transition: all 0.35s ease-in;
+    border: 2px solid #3E82FC59;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    @include mediaMobile {
+        font-size: 10px;
+        padding: 5px 24px;
+    }
+}
+
+
+.subscription__btn:hover {
+    background-color: $color-text-secondary;
+    color: $color-btn;
+}
