@@ -1,0 +1,59 @@
+.card {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+
+    border: 1px solid #E0E6ED;
+    border-radius: 4px;
+    width: 500px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card__container {
+    display: grid;
+}
+
+.card__item {
+    border: 1px solid #E0E6ED;
+    padding: 10px 20px;
+}
+
+.card__products {
+    display: grid;
+    width: 100%;
+}
+
+.card__products-btn {
+    background-color: #6e00ff;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+
+    transition: all 0.2s ease-in;
+}
+
+
+.card__products-btn:hover {
+    background-color: #510FA8;
+}
+
+.card__products-text {
+    border: 1px solid #E0E6ED;
+    margin: 20px;
+    padding: 10px;
+
+    font-size: 16px;
+}

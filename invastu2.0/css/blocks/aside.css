@@ -1,0 +1,32 @@
+.aside {
+    margin-top: 70px;
+    width: 250px;
+}
+
+.aside__list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EFF2F7;
+    border-radius: 4px;
+}
+
+.aside__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #EFF2F7;
+    width: 250px;
+    padding: 10px;
+}
+
+.aside__title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.aside__link {
+    color: #8492A6;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}

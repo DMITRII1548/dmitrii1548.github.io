@@ -1,0 +1,17 @@
+/* 
+ * Blocks
+ */
+@import './base/reset.css';
+@import './base/base.css';
+
+/* 
+ * Blocks
+ */
+@import './blocks/header.css';
+@import './blocks/aside.css';
+@import './blocks/product.css';
+@import './blocks/footer.css';
+@import './blocks/profile.css';
+@import './blocks/article.css';
+@import './blocks/comments.css';
+@import './blocks/card.css';

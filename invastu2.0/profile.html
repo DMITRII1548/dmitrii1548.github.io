@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-link--bold"
+              >ExpoMod</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Товары</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Услуги</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Журнал</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Наши услуги</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Проекты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="profile">
+        <div class="profile__top">
+          <h2 class="profile__title">Apple</h2>
+          <h2 class="profile__category">Техника</h2>
+        </div>
+        <div class="profile__cards">
+          <div class="profile__card">
+            <img
+              src="./imgs/socials/instagram.jpg"
+              alt="Goole"
+              class="profile__card-img"
+            />
+            <h3 class="profile__card-title">Instagram</h3>
+            <a href="#" class="profile__card-action"> Перейти </a>
+          </div>
+          <div class="profile__card">
+            <img
+              src="./imgs/socials/instagram.jpg"
+              alt="Goole"
+              class="profile__card-img"
+            />
+            <h3 class="profile__card-title">Instagram</h3>
+            <a href="#" class="profile__card-action"> Перейти </a>
+          </div>
+          <div class="profile__card">
+            <img
+              src="./imgs/socials/instagram.jpg"
+              alt="Goole"
+              class="profile__card-img"
+            />
+            <h3 class="profile__card-title">Instagram</h3>
+            <a href="#" class="profile__card-action"> Перейти </a>
+          </div>
+          <div class="profile__card">
+            <img
+              src="./imgs/socials/instagram.jpg"
+              alt="Goole"
+              class="profile__card-img"
+            />
+            <h3 class="profile__card-title">Instagram</h3>
+            <a href="#" class="profile__card-action"> Перейти </a>
+          </div>
+          <div class="profile__card">
+            <img
+              src="./imgs/socials/instagram.jpg"
+              alt="Goole"
+              class="profile__card-img"
+            />
+            <h3 class="profile__card-title">Instagram</h3>
+            <a href="#" class="profile__card-action"> Перейти </a>
+          </div>
+          <div class="profile__card">
+            <img
+              src="./imgs/socials/instagram.jpg"
+              alt="Goole"
+              class="profile__card-img"
+            />
+            <h3 class="profile__card-title">Instagram</h3>
+            <a href="#" class="profile__card-action"> Перейти </a>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <img src="./imgs/product/1.jpg" alt="Продукт" class="card__img" />
+        <h2 class="card__title">Компания</h2>
+        <ul class="product__card-stars">
+          <li class="product__card-star">
+            <img src="./imgs/ui/star.svg" alt="" />
+          </li>
+          <li class="product__card-star">
+            <img src="./imgs/ui/star.svg" alt="" />
+          </li>
+          <li class="product__card-star">
+            <img src="./imgs/ui/star.svg" alt="" />
+          </li>
+          <li class="product__card-star">
+            <img src="./imgs/ui/star.svg" alt="" />
+          </li>
+          <li class="product__card-star">
+            <img src="./imgs/ui/star.svg" alt="" />
+          </li>
+        </ul>
+        <ul class="card__container">
+          <li class="card__item"><strong>Сайт: </strong> invastu.kz</li>
+          <li class="card__item"><strong>Адрес: </strong> ЖК GAGARIN PARK​проспект Гагарина, 287/1 ​ТК ARMADA​улица Кабдолова, 1/8 Алматы</li>
+        </ul>
+        <div class="card__products">
+          <button onclick="showOrHideProducts()" class="card__products-btn">Товары</button>
+          <pre class="card__products-text none" id="productsTxt">
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+1. Телефоны 
+2. Ноутбуки
+          </pre>
+        </div>
+      </section>
+      <section class="article">
+        <p class="article__content">
+          Ванная комната - это место, где мы начинаем и заканчиваем свой день, и
+          поэтому важно создать в ней комфортную и функциональную атмосферу.
+          Мебель для ванной является неотъемлемой частью этого пространства, и в
+          этой статье мы рассмотрим некоторые ключевые аспекты выбора и
+          использования мебели для ванной комнаты. Практичность и
+          функциональность Когда мы говорим о мебели для ванной, важно учитывать
+          практичные и функциональные аспекты. Ванная комната часто является
+          небольшим помещением, поэтому важно максимально использовать
+          пространство. Выбирайте мебель, которая имеет встроенные полки, ящики
+          или шкафчики для хранения. Такие элементы помогут организовать
+          пространство и сохранить его в порядке. Материалы и стиль При выборе
+          мебели для ванной учитывайте материалы, которые легко чистить и
+          устойчивы к влаге. Популярными вариантами являются дерево, МДФ,
+          ламинат и пластик. Они обладают долговечностью и способностью
+          противостоять воздействию влаги. Кроме того, учтите стиль вашей ванной
+          комнаты. Если вы предпочитаете минималистический дизайн, выберите
+          мебель с простыми линиями и гладкими поверхностями. Для классического
+          интерьера подойдут элементы с изысканными декоративными деталями.
+          Размер и компактность Учитывайте размеры ванной комнаты при выборе
+          мебели. Если пространство ограничено, рассмотрите варианты компактных
+          мебельных единиц, которые помогут оптимально использовать доступное
+          место. Например, вы можете выбрать подвесную раковину или узкую тумбу
+          под раковину. Это поможет создать ощущение простора и
+          привлекательности в вашей ванной комнате. Интегрированные решения
+          Современная мебель для ванной комнаты предлагает интегрированные
+          решения, которые делают пребывание в ванной более удобным. Например,
+          вы можете выбрать тумбу с зеркалом и встроенной подсветкой. Это не
+          только сэкономит пространство, но и обеспечит дополнительное освещение
+          в вашей ванной комнате. Также есть мебель с встроенными розетками,
+          которые позволяют заряжать устройства или использовать фен или бритву
+          непосредственно в ванной комнате. Декоративные элементы Мебель для
+          ванной комнаты не только функциональна, но и может быть декоративным
+          элементом в интерьере. Выбирайте мебель с интересными деталями, такими
+          как вырезы, фрезеровка или оригинальные ручки. Такие элементы добавят
+          уникальности и индивидуальности вашей ванной комнате. Уход за мебелью
+          Наконец, не забывайте о правильном уходе за мебелью в ванной комнате.
+          Регулярно очищайте поверхности от пыли и влаги, используя мягкую
+          тряпку и мягкое моющее средство. Избегайте использования агрессивных
+          химических средств, которые могут повредить поверхности мебели. Также
+          регулярно проверяйте состояние фурнитуры и проводите необходимую
+          замену или ремонт при необходимости. В заключение, мебель для ванной
+          комнаты является неотъемлемой частью ее дизайна и функциональности.
+          При выборе мебели учитывайте практичность, материалы, стиль, размеры и
+          декоративные элементы. И не забывайте о правильном уходе за вашей
+          мебелью. Создайте уникальное и приятное пространство в вашей ванной
+          комнате с помощью стильной и функциональной мебели.
+        </p>
+      </section>
+      <section class="comments">
+        <h2 class="comments__title">Комментарии:</h2>
+        <div class="comments__items">
+          <div class="comments__item">
+            <img
+              src="./imgs/comments/user.png"
+              alt="Пользователь"
+              class="comments__item-img"
+            />
+            <div class="comments__item-container">
+              <strong class="comments__item-author">Имя пользователя</strong>
+              <p class="comments__item-txt">
+                Текст комментария. Текст комментария. Текст комментария. Текст
+                комментария. Текст комментария. Текст комментария.
+              </p>
+            </div>
+          </div>
+          <div class="comments__item">
+            <img
+              src="./imgs/comments/user.png"
+              alt="Пользователь"
+              class="comments__item-img"
+            />
+            <div class="comments__item-container">
+              <strong class="comments__item-author">Имя пользователя</strong>
+              <p class="comments__item-txt">
+                Текст комментария. Текст комментария. Текст комментария. Текст
+                комментария. Текст комментария. Текст комментария.
+              </p>
+            </div>
+          </div>
+          <div class="comments__item">
+            <img
+              src="./imgs/comments/user.png"
+              alt="Пользователь"
+              class="comments__item-img"
+            />
+            <div class="comments__item-container">
+              <strong class="comments__item-author">Имя пользователя</strong>
+              <p class="comments__item-txt">
+                Текст комментария. Текст комментария. Текст комментария. Текст
+                комментария. Текст комментария. Текст комментария.
+              </p>
+            </div>
+          </div>
+        </div>
+        <form class="comments__form">
+          <h2 class="comments__form-title">Оставить комментарий</h2>
+          <div class="comments__form-container">
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              class="comments__input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Ваша почта"
+              name="email"
+              class="comments__input"
+              required
+            />
+          </div>
+          <textarea
+            name="text"
+            id=""
+            cols="30"
+            rows="10"
+            class="comments__textarea"
+            placeholder="Введите текст комментария"
+            required
+          ></textarea>
+          <button class="comments__btn">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer container">
+      <strong class="footer__policy">© ExpoMod 2024 Все права защищены.</strong>
+      <ul class="footer__socials">
+        <li class="footer__social">
+          <a href="#" class="footer__social-link">
+            <span>+7 (707) 77-77-777</span>
+            <img
+              src="./imgs/ui/whatsapp.svg"
+              alt="whatsapp"
+              class="footer__social-img"
+            />
+          </a>
+        </li>
+
+        <li class="footer__social">
+          <a href="#" class="footer__social-link">
+            <img
+              src="./imgs/ui/instagram.svg"
+              alt="instagram"
+              class="footer__social-img"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    function showOrHideProducts() {
+      document.getElementById('productsTxt').classList.toggle('none')
+    }
+  </script>
+</html>
