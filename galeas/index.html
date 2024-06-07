@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/selector.css">
+    <link rel="stylesheet" href="./css/dropdown_lang.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet" href="./css/slider.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__flex">
+            <div class="header__container">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="./cooperation.html">Сотрудничество</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </nav>
+                </div>
+                <a href="#" class="header__logo">
+                    <img src="./imgs/logo.svg" alt="Галеас">
+                </a>          
+            </div>
+            <div class="header__wrapper">
+                <a href="tel:+79999999999" class="header__phone">
+                    <img src="./imgs/icons/tel.svg" class="phone_img" alt="Телефон">
+                    <strong class="number">+7 (999) 999-99-99</strong>
+                </a>
+                <div class="header__socials">
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/mail.svg" alt="Почта">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/vk.svg" alt="VK">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/Whatsapp.svg" alt="Whats app">
+                    </a>
+                </div>
+    
+                <div class="lang_flex">
+                    <div class="form-group__lang">
+                        <div class="dropdown__lang">
+                            <button class="dropdown__button__lang">RU</button>
+                            <ul class="dropdown__list__lang">
+                                <li class="dropdown__list-item__lang" data-value="option">Английский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Русский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Польский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Немецкий</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__background">
+            <div class="info__text">
+                <h1>ВАША ИДЕЯ -<br>
+                    НАШЕ РЕШЕНИЕ
+                </h1>
+            </div>
+            
+            <div class="header__card">
+                <div class="switch__card">
+                    <button class="submit-focus" id="submit">Оставить заявку</button>
+                    <button  class="contact" id="contact">Контакты</button>
+                </div>
+                <div class="info__card">
+                    <!-- <form action=""> -->
+                        <div class="info__card__flex">
+                            <div class="input1">
+                                <div class="form-group">
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">Тип услуги </button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                        </ul>
+                                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                    </div>
+                                </div>
+                                <input class="wrapper__input" type="text" placeholder="Пункт отправления">
+                                <input class="wrapper__input" type="text" placeholder="Пункт получения">
+                            </div>
+                            <div class="input2">
+                                <input class="wrapper__input" type="text" placeholder="Итоговый вес (KG)">
+                                <input class="wrapper__input" type="email" placeholder="Email">
+                                <button class="button1 button2"  type="submit">Отправить <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                            </div>
+                        </div>
+                    <!-- </form> -->
+                </div>
+                <div class="back__card" id="back__card__info">
+                    <div class="info_back_card">
+                        <img src="./imgs/icons/phone.png" alt=""><h1>+7 (999) 999-99-99</h1>
+                    </div>
+                    <div class="info_back_card">
+                        <img src="./imgs/icons/mail.svg" alt=""><h1>pochtapochta@gmail.com</h1>
+                    </div>
+                    <div class="info_back_card">
+                        <img src="./imgs/icons/Whatsapp.svg" alt=""><h1>+7 (999) 999-99-99</h1>
+                    </div>
+                    <div class="info_back_card">
+                        <img src="./imgs/icons/vk.svg" alt=""><h1>vk.com/gruppagruppa</h1>
+                    </div>
+                </div>
+            </div>
+            <a href="#solutions__sections">
+                <div class="more">
+                    <div class="text">
+                        <h1 style="font-family: 'Montserrat'; font-weight: 700; letter-spacing: 10%;">НАШИ РЕШЕНИЯ</h1>
+                    </div>
+                    <div class="icon__img">
+                        <img src="./imgs/icons/duble-bootom.png" alt="">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header> 
+    <main>
+        <section id="solutions__sections">
+            <div class="content">
+                <div class="inner"></div>
+                <div class="solution__and__services">
+                    <div class="title">
+                        <h1>НАШИ РЕШЕНИЯ</h1> <hr class="green">
+                    </div>
+                        <div class="text__p">
+                            <p>Правильно организованные грузоперевозки, способны решить самые сложные
+                                вопросы доставки товаров из разных уголков мира.<label style="color: #DDAA21;"> Наша группа транспортных
+                                компаний</label>, это важнейшее звено между производителем, поставщиком и
+                                потребителем.
+                            </p>
+                        </div>
+                </div>
+    
+    
+                <div class="solution__card">
+                    <div class="solution__background">
+                        <div class="solution__flex">
+                            <div class="card__wrapper">
+                                <div class="front__card">
+                                    <div class="img">
+                                        <img src="./imgs/icons/boat.png" alt="">
+                                    </div>
+                                    <div class="card__front__text">
+                                        <h1>Морские</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <ul>
+                                        <li>Перевозки контейнерных грузов</li>
+                                        <li>Перевозки негабаритных грузов</li>
+                                        <li>Смешанные проектные мультимодальных задачи</li>
+                                        <li>RO-RO перевозки на пароме</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+    
+                            <div class="card__wrapper">
+                                <div class="front__card">
+                                    <div class="img">
+                                        <img src="./imgs/icons/car.png" alt="">
+                                    </div>
+                                    <div class="card__front__text">
+                                        <h1>Автомобильные</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <ul>
+                                        <li>Перевозки рефрижераторных контейнеров</li>
+                                        <li>Контейнерные перевозки</li>
+                                        <li>Негабаритные перевозки</li>
+                                        <li>Перевозка опасных грузов</li>
+                                        <li>Перевозка сборных грузов</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+    
+                            <div class="card__wrapper">
+                                <div class="front__card">
+                                    <div class="img">
+                                        <img src="./imgs/icons/train.png" alt="">
+                                    </div>
+                                    <div class="card__front__text">
+                                        <h1>Железнодорожные</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <ul>
+                                        <li>Перевозки контейнеров “Трансконтейнер”<br>
+                                            Новороссийск - Регионы</li>
+                                        <li>Перевозка линейных контейнеров<br>
+                                            Владивосток - Регионы</li>
+                                        <li>Перевозка скорыми поездами<br>
+                                            Китай - Москва</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+    
+    
+                            <div class="card__wrapper">
+                                <div class="front__card">
+                                    <div class="img">
+                                        <img src="./imgs/icons/info.png" alt="">
+                                    </div>
+                                    <div class="card__front__text">
+                                        <h1>Полезные</h1>
+                                    </div>
+                                </div>
+                                <div class="card__back">
+                                    <ul>
+                                        <li>Таможенное оформление</li>
+                                        <li>Страхование</li>
+                                        <li>Маркировка</li>
+                                        <li>Экспедирование</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="scroll_wrapper_mobile">
+                    <div class="soilution__card__mobile">
+                        <div class="solution_flex_mobile">
+                            <div class="card_wrapper_mobile">
+                                <div class="solution_background__mobile background_1">
+                                    <div class="front_card_mobile">
+                                        <div class="front_card_mobile_flex">
+                                            <div class="img_mobile">
+                                                <img src="./imgs/icons/boat.png" alt="">
+                                            </div>
+                                            <div class="card__front__text_mobile">
+                                                <h1>Морские</h1>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card_info_mobile">
+                                            <ul>
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозки контейнерных грузов</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозки негабаритных грузов</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Смешанные проектные мультимодальных задачи</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>RO-RO перевозки на пароме</li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soilution__card__mobile">
+                        <div class="solution_flex_mobile">
+                            <div class="card_wrapper_mobile">
+                                <div class="solution_background__mobile background_2">
+                                    <div class="front_card_mobile">
+                                        <div class="front_card_mobile_flex">
+                                            <div class="img_mobile">
+                                                <img src="./imgs/icons/car.png" alt="">
+                                            </div>
+                                            <div class="card__front__text_mobile">
+                                                <h1>Автомобильные</h1>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card_info_mobile">
+                                            <ul>
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозки рефрижераторных контейнеров</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Контейнерные перевозки</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Негабаритные перевозки</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозка опасных грузов</li>
+                                                </div>
+
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозка сборных грузов</li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soilution__card__mobile">
+                        <div class="solution_flex_mobile">
+                            <div class="card_wrapper_mobile">
+                                <div class="solution_background__mobile background_3">
+                                    <div class="front_card_mobile">
+                                        <div class="front_card_mobile_flex">
+                                            <div class="img_mobile">
+                                                <img src="./imgs/icons/train.png" alt="">
+                                            </div>
+                                            <div class="card__front__text_mobile">
+                                                <h1>Железнодорожные</h1>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card_info_mobile">
+                                            <ul>
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозки контейнеров “Трансконтейнер”
+                                                        Новороссийск - Регионы</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозка линейных контейнеров
+                                                        Владивосток - Регионы</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Перевозка скорыми поездами
+                                                        Китай - Москва</li>
+                                                </div>
+        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="soilution__card__mobile">
+                        <div class="solution_flex_mobile">
+                            <div class="card_wrapper_mobile">
+                                <div class="solution_background__mobile background_4">
+                                    <div class="front_card_mobile">
+                                        <div class="front_card_mobile_flex">
+                                            <div class="img_mobile">
+                                                <img src="./imgs/icons/info.png" alt="">
+                                            </div>
+                                            <div class="card__front__text_mobile">
+                                                <h1>Полезные</h1>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card_info_mobile">
+                                            <ul>
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Таможенное оформление</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Страхование</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Маркировка</li>
+                                                </div>
+        
+                                                <div class="info_li">
+                                                    <img src="./imgs/icons/box.png" alt="">
+                                                    <li>Экспедирование</li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="solution__button">
+                    <button class="button1">Все решения <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                </div>
+            </div>
+    
+            
+            <div class="banner">
+                <div class="banner__info">
+                    <div class="banner__text">
+                        <h1 class="banner__h1">НАДЁЖНЫЕ РЕШЕНИЯ</h1>
+                        <h1 class="banner__h1__2">ПЕРЕВОЗКИ ВАШЕГО ГРУЗА</h1>
+                    </div>
+                    <button class="button1">Связаться <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="content">
+                <div class="inner"></div>
+                <div class="solution__and__services">
+                    <div class="title">
+                        <h1>НАШИ УСЛУГИ</h1> <hr class="green">
+                    </div>
+                        <div class="text__p">
+                            <p>
+                                Правильно организованные грузоперевозки, способны решить самые сложные
+                                вопросы доставки товаров из разных уголков мира. <label style="color: #DDAA21;">Наша группа транспортных
+                                компаний</label>, это важнейшее звено между производителем, поставщиком и
+                                потребителем.
+                            </p>
+                            <p>
+                                Транспортно-экспедиционная компания «Галеас» вот уже больше пятнадцати лет занимается
+                                контейнерными перевозками, это не просто <label style="color: #DDAA21;">экспедирование грузов в Новороссийске.</label>
+                                Накопленный опыт и знания, как построить работу так, чтобы груз был доставлен в надлежащем
+                                состоянии и в кратчайшие сроки позволяет транспортировать абсолютно все: начиная от
+                                продуктов питания, заканчивая техникой и специализированным оборудованием — для этих
+                                целей используя специально оборудованные контейнеры и транспортные средства.
+                            </p>
+                        </div>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper__container">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./imgs/boat_slide.png" alt="" class="swiper__img">
+                                <div class="swiper__content">
+                                    <div class="swiper__wrapper">
+                                        <h3 class="swiper__title">
+                                            Морской фрахт
+                                        </h3>
+                                        <p class="swiper__txt">
+                                            Хорошо анализируя рынок морского фрахта, стоимость перевозки,  наша компания готова предоставить лучшие сроки и цену.
+                                        </p>                                
+                                    </div>
+
+                                    <a href="#" class="swiper__link">Читать</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./imgs/bumaga-slide.png" alt="" class="swiper__img">
+                                <div class="swiper__content">
+                                    <div class="swiper__wrapper">
+                                        <h3 class="swiper__title">
+                                            Таможенное оформление
+                                        </h3>
+                                        <p class="swiper__txt">
+                                            Наша команда состоит из квалифицированных сотрудников, готовых правильно и оперативно организовать таможенное оформление товаров.
+                                        </p>                                
+                                    </div>
+
+                                    <a href="#" class="swiper__link">Читать</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./imgs/3-slide.png" alt="" class="swiper__img">
+                                <div class="swiper__content">
+                                    <div class="swiper__wrapper">
+                                        <h3 class="swiper__title">
+                                            Перевозки
+                                        </h3>
+                                        <p class="swiper__txt">
+                                            Группа компаний «GALEAS» организовывает и осуществляет автомобильные перевозки грузов из Новороссийска, по территории Российской Федерации.
+                                        </p>                                
+                                    </div>
+
+                                    <a href="#" class="swiper__link">Читать</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./imgs/4-slide.png" alt="" class="swiper__img">
+                                <div class="swiper__content">
+                                    <div class="swiper__wrapper">
+                                        <h3 class="swiper__title">
+                                            Страхование грузов
+                                        </h3>
+                                        <p class="swiper__txt">
+                                            Страхование грузов в Новороссийске или страхование морской перевозки,  это верный подход при планировании поставок.
+                                    </div>
+
+                                    <a href="#" class="swiper__link">Читать</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./imgs/boat_slide.png" alt="" class="swiper__img">
+                                <div class="swiper__content">
+                                    <div class="swiper__wrapper">
+                                        <h3 class="swiper__title">
+                                            Морской фрахт
+                                        </h3>
+                                        <p class="swiper__txt">
+                                            Хорошо анализируя рынок морского фрахта, стоимость перевозки,  наша компания готова предоставить лучшие сроки и цену.
+                                        </p>                                
+                                    </div>
+
+                                    <a href="#" class="swiper__link">Читать</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./imgs/bumaga-slide.png" alt="" class="swiper__img">
+                                <div class="swiper__content">
+                                    <div class="swiper__wrapper">
+                                        <h3 class="swiper__title">
+                                            Таможенное оформление
+                                        </h3>
+                                        <p class="swiper__txt">
+                                            Наша команда состоит из квалифицированных сотрудников, готовых правильно и оперативно организовать таможенное оформление товаров.
+                                        </p>                                
+                                    </div>
+
+                                    <a href="#" class="swiper__link">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>      
+                    
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                    
+
+                <div style="display: flex; justify-content: center; margin-top: 60px;">   
+                    <button class="button1">Оставить заявку <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                </div>  
+            </div>
+        </section>
+
+        <div class="inner"></div>
+        
+        <section>
+            <div class="content">
+                <div class="more_flex">
+                    <div class="more__compani">
+                        <img class="more__section" src="./imgs/лого_новое_галеас_2023 1.png" alt="">
+                        <div class="text__p">
+                            <p style="margin-top: 20px;">
+                                Правильно организованные грузоперевозки, способны решить <label class="label__text">самые сложные
+                                вопросы</label> доставки товаров из разных уголков мира. Наша группа транспортных
+                                компаний, это важнейшее звено между <label class="label__text">производителем, поставщиком и
+                                потребителем.</label>
+                            </p>
+                            <p style="margin-top: 20px; margin-bottom: 20px;">
+                                Основное направление деятельности -<label class="label__text"> это импорт и экспорт грузов.</label>
+                            </p>
+                            <p>
+                                География перевозок - Российская Федерация, Таможенный союз, Турция, Китай,
+                                Евросоюз, а так же страны дальнего зарубежья.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="more__section mobile__more" src="./imgs/more_section.png" alt="">
+                </div>
+            
+
+                <div class="info__compani">
+                    <div class="info__compani__card">
+                        <img src="./imgs/icons/рейтинг.png" alt="">
+                        <p><label class="label__p">более 550 TEU/мес </label><br>стабильный грузопоток</p>
+                    </div>
+                    <div class="info__compani__card">
+                        <img src="./imgs/icons/рукопожатие.png" alt="">
+                        <p><label class="label__p">более 400 клиентов</label><br>доверяют нам</p>
+                    </div>
+                    <div class="info__compani__card">
+                        <img src="./imgs/icons/грузовик.png" alt="">
+                        <p><label class="label__p">более 250 машин </label><br>собственный автопарк</p>
+                    </div>
+                    <div class="info__compani__card">
+                        <img src="./imgs/icons/сотрудник.png" alt="">
+                        <p><label class="label__p">более 45 человек </label><br>квалифицированных <br>сотрудников</p>
+                    </div>
+                </div>
+                <div class="button__info__compani">
+                    <button class="button1">Подробнее о компании <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="inner"></div>
+        
+        <section>
+            <div class="content">
+                <div class="our__clients">
+                    <div class="title">
+                        <h1>НАШИ КЛИЕНТЫ</h1> <hr class="green">
+                    </div>
+                    <div class="our__clients__logo">
+                        <div class="clients__logo__flex">
+                            <img src="./imgs/Leroy_merlin.png" alt="">
+                            <img src="./imgs/Лукойл.png" alt="">
+                            <img src="./imgs/Dove.png" alt="">
+                            <img src="./imgs/avtovas.png" alt="">
+                            <img src="./imgs/nivea.png" alt="">
+                            <img src="./imgs/atlanta.png" alt="">
+                        </div>
+                        <div class="mobile_scrollbar_logo">
+                            <img src="./imgs/Leroy_merlin.png" alt="">
+                            <img src="./imgs/Лукойл.png" alt="">
+                            <img src="./imgs/Dove.png" alt="">
+                            <img src="./imgs/avtovas.png" alt="">
+                            <img src="./imgs/nivea.png" alt="">
+                            <img src="./imgs/atlanta.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="inner"></div>
+                <div class="map">
+                    <div class="mobi_map" class="mobi_map" style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/ru/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.kz/maps/ru/213/moscow/house/ulitsa_8_marta_1/Z04YcwJlTkwCQFtvfXt4eH5kYA==/?ll=37.555796%2C55.799275&utm_medium=mapframe&utm_source=maps&z=13.91" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица 8 Марта, 1 — Яндекс Карты</a><iframe src="https://yandex.kz/map-widget/v1/?ll=37.555796%2C55.799275&mode=whatshere&whatshere%5Bpoint%5D=37.555505%2C55.799224&whatshere%5Bzoom%5D=17&z=13.91" width="960px" height="528px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    <div class="map__flex">
+                        <div class="info__map">
+                            <div class="info__map__text1">
+                                <ul>
+                                    <li><button class="map_swipe">Офис в г. Москва</button></li>
+                                    <li>Россия, г.Москва, ул. 8 марта, д.1, стр.12, 2 этаж (левое крыло БЦ ТРИО)</li>
+                                    <li>8-800-500-8816 (звонок бесплатный)</li>
+                                    <li>info@galeas-nvr.ru</li>
+                                    <li>Пн-Пт 9:00– 18:00 Вс-Сб 11:00– 14:00</li>
+                                </ul>
+                            </div>
+                            <div class="info__map__text1">
+                                <ul>
+                                    <li><button class="map_swipe">Офис в г. Новороссийск</button></li>
+                                    <li>Россия, г.Новороссийск, ул.Леднева, д.5, офис 806</li>
+                                    <li>8-800-500-8816 (звонок бесплатный)</li>
+                                    <li>info@galeas-nvr.ru</li>
+                                    <li>Пн-Пт 9:00– 18:00 Вс-Сб 11:00– 14:00</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="desktop" style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/ru/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.kz/maps/ru/213/moscow/house/ulitsa_8_marta_1/Z04YcwJlTkwCQFtvfXt4eH5kYA==/?ll=37.555796%2C55.799275&utm_medium=mapframe&utm_source=maps&z=13.91" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица 8 Марта, 1 — Яндекс Карты</a><iframe src="https://yandex.kz/map-widget/v1/?ll=37.555796%2C55.799275&mode=whatshere&whatshere%5Bpoint%5D=37.555505%2C55.799224&whatshere%5Bzoom%5D=17&z=13.91" width="960px" height="528px" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+                <div class="inner"></div>
+                <div class="navigation">
+                    <h1 class="navigation__title">Решения</h1>
+                    <div class="navigation__a">
+                        <div class="navigation1">
+                        <ul class="navigation__ul">
+                            <li class="title__li">Морские перевозки</li>
+                            <a href="">
+                                <li class="list_dicoration">Морские перевозки</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">Генеральные/сухие перевозки</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">Рефрижераторные грузы</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">Проектные грузы</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">Наливные грузы</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">Розничная торговля</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">LCL/FCL перевозки</li>
+                            </a>
+                            <a href="">
+                                <li class="list_dicoration">Крунотоннажные и негарабаритные<br> перевозки</li>
+                            </a>
+                        </ul>
+                        </div>
+                        <div class="navigation2">
+                            <ul class="navigation__ul">
+                                <li class="title__li">Наземные перевозки</li>
+                                <a href="">
+                                    <li class="list_dicoration">Автомобильные перевозки</li>
+                                </a>
+                                <a href="">
+                                    <li class="list_dicoration">Железнодорожные перевозки</li>
+                                </a>
+                                <a href="">
+                                    <li class="list_dicoration">LCL/FCL перевозки</li>
+                                </a>
+                                <a href="">
+                                    <li class="list_dicoration">Крупнотоннажные и негабаритные<br> перевозки</li>
+                                </a>
+                
+                            </ul>
+                        </div>
+                        <div class="navigation3">
+                            <ul class="navigation__ul">
+                                <li class="title__li">Воздушные перевозки</li>
+                                <a href="">
+                                    <li class="list_dicoration">Воздушные перевозки</li>
+                                </a>
+                                <a href="">
+                                    <li class="list_dicoration">LCL/FCL перевозки</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div> 
+                        <hr class="hr__title">
+                        <h1 class="navigation__title">Услуги</h1>
+                        <div class="navigation__a">
+                            <div class="navigation1">
+                                <a href=""><li>Таможенное оформление</li></a>
+                                <a href=""><li>Реализация дизтоплива</li></a>
+                            </div>
+                            <div class="navigation2">
+                                <a href=""><li>Страхование грузов</li></a>
+                                <a href=""><li>Автозапчасти для грузовиков</li></a>
+                            </div>
+                            <div class="navigation3">
+                                <a href=""><li>Экспедирование</li></a>
+                                <a href=""><li>Складская логистика</li></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__txt">
+            © 2002-2024 Галеас. Все права защищены. Логистика, контейнерные перевозки, таможенное оформление, перевозка грузов Новороссийск, Москва.
+        </div>   
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>  
+    </footer>
+</body>
+<script src="./js/dropdown_lang.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/dropdown.js"></script>
+</html>
