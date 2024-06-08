@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/btn.css">           
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/news-items.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__flex">
+            <div class="header__container">
+                <div class="burger-menu">
+                    <img src="./imgs/menu.svg" alt="">
+                </div>
+                <a href="#" class="header__logo">
+                    <img src="./imgs/logo.svg" alt="Галеас">
+                </a>          
+            </div>
+            <div class="header__wrapper">
+                <a href="tel:+79999999999" class="header__phone">
+                    <img src="./imgs/icons/tel.svg" class="phone_img" alt="Телефон">
+                    <strong class="number">+7 (999) 999-99-99</strong>
+                </a>
+                <div class="header__socials">
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/mail.svg" alt="Почта">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/vk.svg" alt="VK">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/Whatsapp.svg" alt="Whats app">
+                    </a>
+                </div>
+    
+                <div class="lang">
+                    <label class="lang__label" for="lang">RU <img src="./imgs/icons/arrow-bottom.svg" alt=""></label>
+                    <select class="lang__select" id="lang">
+                        <option class="lang__option" value="#">Английский</option>
+                        <option class="lang__option" value="#">Русский</option>
+                        <option class="lang__option" value="#">Польский</option>
+                        <option class="lang__option" value="#">Немецкий</option>
+                    </select>                
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb container">
+            <a href="#" class="breadcrumb__link">Главная/</a>
+            <a href="#" class="breadcrumb__link">Новости/</a>
+            <a href="#" class="breadcrumb__link breadcrumb__link--active">Новость</a>
+        </section>
+        <section class="news-items container">
+            <h2 class="news-items__header">
+                Новости
+            </h2>
+            <input type="text" placeholder="Поиск" class="news-items__input">
+            <div class="news-items__cols">
+                <div class="news-items__col">
+                    <a href="#" class="news-items__card news-items__card--big news-items__card--1">
+                        <h2 class="news-items__title">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+                        </h2>
+                        <div class="news-items__row">
+                            <strong class="news-items__date">10/02/2020</strong>
+                            <span class="news-items__more">Подробнее</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-items__card news-items__card--half news-items__card--2">
+                        <h2 class="news-items__title">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+                        </h2>
+                        <div class="news-items__row">
+                            <strong class="news-items__date">10/02/2020</strong>
+                            <span class="news-items__more">Подробнее</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-items__card news-items__card--3">
+                        <h2 class="news-items__title">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+                        </h2>
+                        <div class="news-items__row">
+                            <strong class="news-items__date">10/02/2020</strong>
+                            <span class="news-items__more">Подробнее</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="news-items__col">
+                    <a href="#" class="news-items__card  news-items__card--half news-items__card--4">
+                        <h2 class="news-items__title">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+                        </h2>
+                        <div class="news-items__row">
+                            <strong class="news-items__date">10/02/2020</strong>
+                            <span class="news-items__more">Подробнее</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-items__card news-items__card--big news-items__card--5">
+                        <h2 class="news-items__title">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+                        </h2>
+                        <div class="news-items__row">
+                            <strong class="news-items__date">10/02/2020</strong>
+                            <span class="news-items__more">Подробнее</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-items__card news-items__card--6">
+                        <h2 class="news-items__title">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+                        </h2>
+                        <div class="news-items__row">
+                            <strong class="news-items__date">10/02/2020</strong>
+                            <span class="news-items__more">Подробнее</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="btn news-items--btn">
+                <span>
+                    Загрузить еще 
+                </span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4L7 6L13 12L7 18L9 20L17 12L9 4Z" fill="white"/>
+                </svg>
+            </a>
+        </section>
+        </section>
+        <section class="details container">
+            <h2 class="details__title">Подробнее о галеас</h2>
+            <div class="details__cards">
+                <div class="details__card" style="background: url('./imgs/details/1.jpg');">
+                    <strong class="details__strong">О компании</strong>
+                </div>
+                <div class="details__card" style="background: url('./imgs/details/2.jpg');">
+                    <strong class="details__strong">Руководство</strong>
+                </div>
+                <div class="details__card" style="background: url('./imgs/details/3.jpg');">
+                    <strong class="details__strong">Миссия и ценности</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__txt">
+            © 2002-2024 Галеас. Все права защищены. Логистика, контейнерные перевозки, таможенное оформление, перевозка грузов Новороссийск, Москва.
+        </div>   
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>  
+    </footer>
+</body>
+</html>

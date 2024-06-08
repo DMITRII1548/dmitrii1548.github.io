@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/questions.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/solutions.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/dropdown_lang.css">
+    <link rel="stylesheet" href="./css/shipping.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/logistics.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__flex">
+            <div class="header__container">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="./cooperation.html">Сотрудничество</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </nav>
+                </div>
+                <a href="#" class="header__logo">
+                    <img src="./imgs/logo.svg" alt="Галеас">
+                </a>          
+            </div>
+            <div class="header__wrapper">
+                <a href="tel:+79999999999" class="header__phone">
+                    <img src="./imgs/icons/tel.svg" class="phone_img" alt="Телефон">
+                    <strong class="number">+7 (999) 999-99-99</strong>
+                </a>
+                <div class="header__socials">
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/mail.svg" alt="Почта">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/vk.svg" alt="VK">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/Whatsapp.svg" alt="Whats app">
+                    </a>
+                </div>
+    
+                    
+                <div class="lang_flex">
+                    <div class="form-group__lang">
+                        <div class="dropdown__lang">
+                            <button class="dropdown__button__lang">RU</button>
+                            <ul class="dropdown__list__lang">
+                                <li class="dropdown__list-item__lang" data-value="option">Английский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Русский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Польский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Немецкий</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb container">
+            <a href="#" class="breadcrumb__link">Главная/</a>
+            <a href="#" class="breadcrumb__link breadcrumb__link--active">О нас</a>
+        </section>
+
+
+        <section class="questions container">
+            <h2 class="questions__title">В основе успеха - долгосрочное<br> партнёрство с клиентами</h2>
+
+            <div class="info_solution">
+                <p>
+                    Мы создаем <label class="accent__p">долгосрочные партнерские отношения </label>с клиентами, разделяя
+                    стремление к безопасной, эффективной и экологически безопасной
+                    транспортировке грузов <label class="accent__p">по всему миру</label>.
+                </p>
+                <p class="p_info">
+                    Мировая торговля — механизм с <label class="accent__p">множеством шестеренок</label>. Что произойдет, если
+                    хотя бы одна из них даст сбой? Пандемия СОVID-19 оказалась суровым испытанием
+                    для глобальных цепей поставок. Мы <labela class="accent__p">гордимся стойкостью и гибкостью сотрудников</label>,
+                    а также нашей способностью внедрять инновации и решать проблемы клиентов
+                    даже в такой <label class="accent__p">чрезвычайной ситуации</label>.
+                </p>
+            </div>
+            <!-- <div class="card_solution">
+                <div class="wrapper_card_solution wrapper1">
+                    <div class="solution_text">
+                        <h4>Сельское хозяйство</h4>
+                    </div>
+                    <div class="silka_card">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wrapper_card_solution wrapper2">
+                    <div class="solution_text">
+                        <h4>Автомобильная<br> промышленность</h4>
+                    </div>
+                    <div class="silka_card silka_card2">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wrapper_card_solution wrapper1">
+                    <div class="solution_text">
+                        <h4>Сельское хозяйство</h4>
+                    </div>
+                    <div class="silka_card">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wrapper_card_solution wrapper2">
+                    <div class="solution_text">
+                        <h4>Автомобильная<br> промышленность</h4>
+                    </div>
+                    <div class="silka_card silka_card2">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <div class="inner"></div>
+
+        <section class="container">
+                <div class="swiper_shiping">
+                    <button class="swiper_shiping-button">Общая информация</button>
+                    <button class="swiper_shiping-button-2">Оборудование</button>
+                </div>
+                <div class="logistic_info">
+                    <div class="logistic_img">
+                        <img src="./imgs/logistic_info.png" alt="">
+                    </div>
+                    <div class="logistic_text">
+                        <h2 class="questions__title">В основе успеха - долгосрочное<br> партнёрство с клиентами</h2>
+                        <p>Мы семейная компания, для которой <label class="accent__p">высшим приоритетом являются люди</label>. 
+                            Наша задача — <lable class="accent__p">открывать клиентам мир возможностей</lable>, постоянно инвестируя 
+                            в стабильные, надежные и экологически устойчивые решения в области 
+                            транспортировки и логистики. Мы работаем в интересах людей, бережно 
+                            относимся к окружающей среде и <label class="accent__p">способствуем развитию инфраструктуры 
+                                и экономики</label> там, где ведем свою деятельность. Наша сеть региональных 
+                            и международных маршрутов создает <label class="accent__p">основу международной торговли</label> и 
+                            обеспечивает доставку грузов в любых условиях. Перевозите ли вы товары 
+                            первой необходимости, лекарства и продукты питания, или предметы роскоши, 
+                            например, дорогие автомобили, положитесь на наши гибкие логистические решения 
+                            и возможности интегрированной международной сети автомобильных, 
+                            железнодорожных и морских перевозок.</p>
+                    </div>
+                </div>
+        </section>  
+
+        <div class="inner"></div>
+
+        <section class="container">
+            <div class="logistic_info_card">
+                <div class="logistic_info_text">
+                    <h2 class="questions__title">Комплексные услуги для клиентов</h2>
+                    <p class="p_info">
+                        Индвидуальный подход важен, поэтому мы открываем офисы <labela class="accent__p">в разных странах</label>, чтобы вы могли<br> обратиться за персональным решением <label class="accent__p">напрямую</label>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="logistic_banner_card">
+                <div class="logistic_banner_flex">
+                    <div class="logistic_banner_img logistic_banner_img1">
+                        <div class="logistic_banner_text">
+                            <p><label class="accent__p">Глобальная сеть</label>, которая включает свыше 675 представительств 
+                                в 155 странах, способствует укреплению торговых отношений 
+                                между крупнейшими экономиками мира и развивающимися рынками 
+                                на всех континентах.</p>
+                        </div>
+                    </div>
+
+                    <div class="logistic_banner_img logistic_banner_img2">
+                        <div class="logistic_banner_text">
+                            <p><label class="accent__p">Наш флот </label>оснащен новейшими «зелеными» технологиями, 
+                                включая смарт-контейнеры — современный стандарт перевозок
+                                в условиях актуальных экологических требований и 
+                                ответственности клиентов.</p>
+                        </div>
+                    </div>
+
+                    <div class="logistic_banner_img logistic_banner_img3">
+                        <div class="logistic_banner_text">
+                            <p><label class="accent__p">200 000</label> сотрудников компании организуют поставку 
+                                товаров и услуг в населенные пункты, клиентам и 
+                                международным деловым партнерам в соответствии 
+                                с индивидуальными требованиями.</p>
+                        </div>
+                    </div>
+
+                    <div class="logistic_banner_img logistic_banner_img4">
+                        <div class="logistic_banner_text2">
+                            <p><label class="accent__p">Среди</label> наших решений — сухопутные перевозки, 
+                                логистика и услуги растущей сети портовых 
+                                терминалов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="inner"></div>
+
+        <section class="container">
+            <div class="swiper_logistic">
+                <h2 class="questions__title">Наши транспортные и<br>
+                    логистические решения</h2>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="swiper__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./imgs/boat_slide.png" alt="" class="swiper__img">
+                            <div class="swiper__content">
+                                <div class="swiper__wrapper">
+                                    <h3 class="swiper__title">
+                                        Морской фрахт
+                                    </h3>
+                                    <p class="swiper__txt">
+                                        Хорошо анализируя рынок морского фрахта, стоимость перевозки,  наша компания готова предоставить лучшие сроки и цену.
+                                    </p>                                
+                                </div>
+
+                                <a href="#" class="swiper__link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/bumaga-slide.png" alt="" class="swiper__img">
+                            <div class="swiper__content">
+                                <div class="swiper__wrapper">
+                                    <h3 class="swiper__title">
+                                        Таможенное оформление
+                                    </h3>
+                                    <p class="swiper__txt">
+                                        Наша команда состоит из квалифицированных сотрудников, готовых правильно и оперативно организовать таможенное оформление товаров.
+                                    </p>                                
+                                </div>
+
+                                <a href="#" class="swiper__link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/3-slide.png" alt="" class="swiper__img">
+                            <div class="swiper__content">
+                                <div class="swiper__wrapper">
+                                    <h3 class="swiper__title">
+                                        Перевозки
+                                    </h3>
+                                    <p class="swiper__txt">
+                                        Группа компаний «GALEAS» организовывает и осуществляет автомобильные перевозки грузов из Новороссийска, по территории Российской Федерации.
+                                    </p>                                
+                                </div>
+
+                                <a href="#" class="swiper__link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/4-slide.png" alt="" class="swiper__img">
+                            <div class="swiper__content">
+                                <div class="swiper__wrapper">
+                                    <h3 class="swiper__title">
+                                        Страхование грузов
+                                    </h3>
+                                    <p class="swiper__txt">
+                                        Страхование грузов в Новороссийске или страхование морской перевозки,  это верный подход при планировании поставок.
+                                </div>
+
+                                <a href="#" class="swiper__link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/boat_slide.png" alt="" class="swiper__img">
+                            <div class="swiper__content">
+                                <div class="swiper__wrapper">
+                                    <h3 class="swiper__title">
+                                        Морской фрахт
+                                    </h3>
+                                    <p class="swiper__txt">
+                                        Хорошо анализируя рынок морского фрахта, стоимость перевозки,  наша компания готова предоставить лучшие сроки и цену.
+                                    </p>                                
+                                </div>
+
+                                <a href="#" class="swiper__link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./imgs/bumaga-slide.png" alt="" class="swiper__img">
+                            <div class="swiper__content">
+                                <div class="swiper__wrapper">
+                                    <h3 class="swiper__title">
+                                        Таможенное оформление
+                                    </h3>
+                                    <p class="swiper__txt">
+                                        Наша команда состоит из квалифицированных сотрудников, готовых правильно и оперативно организовать таможенное оформление товаров.
+                                    </p>                                
+                                </div>
+
+                                <a href="#" class="swiper__link">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>      
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </section>
+
+        <section class="banner container">
+            <div class="banner__content">
+                <h2 class="banner__title">Воспользуйтесь <br>
+                    услугами компании</h2>
+                <a href="#" class="btn btn--banner">
+                    <span>
+                        Смотреть расписание
+                    </span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4L7 6L13 12L7 18L9 20L17 12L9 4Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="solutions container">
+            <h2 class="solutions__title">Решения</h2>
+            <div class="solutions__wrapper" style="
+            border-bottom: 1px solid #D9D9D9;">
+                <ul class="solution__col">
+                    <li class="solution__item--title">Морские перевозки</li>
+                    <li class="solution__item">Морские перевозки</li>
+                    <li class="solution__item">Генеральные/сухие перевозки</li>
+                    <li class="solution__item">Рефрижераторные грузы</li>
+                    <li class="solution__item">Проектные грузы</li>
+                    <li class="solution__item">Наливные грузы</li>
+                    <li class="solution__item">Розничная торговля</li>
+                    <li class="solution__item">LCL/FCL перевозки</li>
+                    <li class="solution__item">Крунотоннажные и негарабаритные перевозки</li>
+                </ul> 
+                
+                <ul class="solution__col">
+                    <li class="solution__item--title">Наземные перевозки</li>
+                    <li class="solution__item">Автомобильные перевозки</li>
+                    <li class="solution__item">Железнодорожные перевозки</li>
+                    <li class="solution__item">LCL/FCL перевозки</li>
+                    <li class="solution__item">Крупнотоннажные и негабаритные перевозки</li>
+                </ul> 
+
+                <ul class="solution__col">
+                    <li class="solution__item--title">Воздушные перевозки</li>
+                    <li class="solution__item">Воздушные перевозки</li>
+                    <li class="solution__item">LCL/FCL перевозки</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="solutions container">
+            <h2 class="solutions__title">Услуги</h2>
+            <div class="solutions__wrapper">
+                <ul class="solution__col">
+                    <li class="solution__item">Таможенное оформление</li>
+                    <li class="solution__item">Реализация дизтоплива</li>
+                </ul>
+
+                <ul class="solution__col">
+                    <li class="solution__item">Страхование грузов</li>
+                    <li class="solution__item">Автозапчасти для грузовиков</li>
+                </ul>
+
+                <ul class="solution__col">
+                    <li class="solution__item">Экспедирование</li>
+                    <li class="solution__item">Складская логистика</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__txt">
+            © 2002-2024 Галеас. Все права защищены. Логистика, контейнерные перевозки, таможенное оформление, перевозка грузов Новороссийск, Москва.
+        </div>   
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>  
+    </footer>
+    <script src="./js/questions.js"></script>
+</body>
+<script src="./js/dropdown_lang.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/slider.js"></script>
+</html>
