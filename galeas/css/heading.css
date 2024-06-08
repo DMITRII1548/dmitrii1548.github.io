@@ -1,0 +1,54 @@
+.heading {
+    padding-top: 135px;
+    height: 500px;
+
+    border-top: 10px solid #DDAA21;
+    background: url('../imgs/faq-bg.jpg')
+}
+
+@media screen and (max-width: 400px) {
+    .heading {
+        background: url('../imgs/heading-bg-mob.jpg');
+        height: 360px;
+        padding-top: 60px;
+    }
+}
+
+.heading__content {
+    display: grid;
+    gap: 40px;
+}
+
+.heading__title {
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+
+    color: #FFF;
+
+    padding-left: 60px;
+
+    border-left: 20px solid #DDAA21;
+}
+
+.btn--heading {
+    width: 320px;
+    padding: 18px 54px;
+}
+
+@media screen and (max-width: 999px) {
+
+    .heading__content {
+        justify-items: center;
+    }
+    .heading__title {
+        text-align: center;
+        padding-left: 0;
+        border-left: 0 solid #000;
+
+        font-size: 48px;
+        line-height: 48px;
+    }
+}

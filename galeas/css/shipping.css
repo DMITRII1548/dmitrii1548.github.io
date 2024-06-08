@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  /* max-width: 100%; */
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+
+.swiper_shiping{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.swiper_shiping-button{
+    background-color: #00583A;
+    width: 230px;
+    height: 40px;
+    color: white;
+}
+
+p{
+    font-weight: 400;
+}
+
+
+.accent__p{
+    color: #DDAA21;
+}
+
+.accent__p2{
+    color: #00583A;
+}
+
+.info_solution{
+    padding-right: 592px;
+}
+
+.p_info{
+    margin-top: 20px;
+}
+
+.solution_text h4{
+    color: white;
+    font-weight: 700;
+    border-left: 5px solid rgba(221, 170, 33, 1);
+    padding-left: 10px;
+}
+
+
+.card_solution{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.silka_card{
+    margin-top: 158px;
+}
+
+.silka_card2{
+    margin-top: 140px;
+}
+
+.silka_card a{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.wrapper1{
+    background: url(../imgs/shiping1.png);
+}
+
+.wrapper2{
+    background: url(../imgs/shiping2.png);
+}
+
+.wrapper_card_solution{
+    background-color: rgba(48, 48, 48, 0.6);
+    width: 340px;
+    height: 242px;
+    padding: 23px 23px;
+}
+
+
+.swiper_shiping-button-2{
+    width: 230px;
+    height: 40px;
+}
+
+.inner{
+    padding: 120px 0;
+}
+
+
+.more_wrapper_card{
+    width: 460px;
+    height: 409px;
+}
+
+
+.more_shiping_card-text h1{
+    color: #00583A;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.more_card_shiping_flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.more_shiping_card-text2{
+    margin-bottom: 20px;
+}
+
+.more_shiping_card-text2 h1{
+    margin-top: 0px;
+}
+
+.card_icon_flex{
+    display: flex;
+    align-items: center;
+}
+
+.card_icon{
+    width: 340px;
+    height: 228px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.card_icon_text{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+.heading {
+    padding-top: 135px;
+    height: 500px;
+
+    border-top: 10px solid #DDAA21;
+    background: url('../imgs/shiping.png')
+}
+
+@media screen and (max-width:425px){
+    .header__social{
+      display: none;
+    }
+
+    .header__card{
+        width: 380px;
+        height: 580px;
+        margin: 40px 0 0 28px;
+    }
+
+    .header__logo{
+        margin-left: 81px;
+    }
+}  
+
+@media screen and (max-width:375px){
+    .header__logo{
+        margin-left: 34px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading {
+        background: url('../imgs/shiping.png') center no-repeat;
+        height: 360px;
+        padding-top: 60px;
+    }
+}
+
+.heading__content {
+    display: grid;
+    gap: 40px;
+}
+
+.heading__title {
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: left;
+
+    color: #FFF;
+
+    padding-left: 60px;
+
+    border-left: 20px solid #DDAA21;
+}
+
+.btn--heading {
+    width: 320px;
+    padding: 18px 54px;
+}
+
+@media screen and (max-width: 999px) {
+
+    .heading__content {
+        justify-items: center;
+    }
+    .heading__title {
+        text-align: center;
+        padding-left: 0;
+        border-left: 0 solid #000;
+
+        font-size: 48px;
+        line-height: 48px;
+    }
+}

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.inner{
+    padding: 120px 0;
+}
+
+.container{
+    padding: 0 250px;
+}
+
+.accent__p{
+    color: #DDAA21;
+    font-weight: 600;
+}
+
+.management_card{
+    width: 1420px;
+    height: 460px;
+    margin-bottom: 40px;
+}
+
+.management_p{
+    margin: 20px 0;
+}
+
+.managment_card_name{
+    color: #B6B6B6;
+    font-size: 14px;
+}
+
+.managment_card_name p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.managment_card_info{
+    margin-left: 20px;
+}
+
+.management_name{
+    color: #00583A;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.managment_card_description{
+    border-left: 5px solid #DDAA21;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.managment_card_flex{
+    display: flex;
+}
+
+.management_card_img{
+    width: 460px;
+}
+
+
+.managment_card_description p{
+    margin-left: 20px;
+}
+
+p{
+    font-weight: 400;
+}
+
+@media screen and (max-width:1440px){
+    .container {
+        padding: 0 14px;
+    }
+}
