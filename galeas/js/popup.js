@@ -17,6 +17,9 @@
 
     formBtn.onclick = () => {
         if (window) {
+            formBtn.classList.toggle('switch__card__btn--active')
+            contactBtn.classList.toggle('switch__card__btn--active')
+
             form.classList.toggle('none')
             info.classList.toggle('none')
 
@@ -26,6 +29,9 @@
 
     contactBtn.onclick = () => {
         if (!window) {
+            formBtn.classList.toggle('switch__card__btn--active')
+            contactBtn.classList.toggle('switch__card__btn--active')
+            
             form.classList.toggle('none')
             info.classList.toggle('none')
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/btn.css">           
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -12,13 +13,28 @@
     <link rel="stylesheet" href="./css/details.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/news-items.css">
+    <link rel="stylesheet" href="./css/dropdown_lang.css">
 </head>
 <body>
     <header class="header">
         <div class="header__flex">
             <div class="header__container">
-                <div class="burger-menu">
-                    <img src="./imgs/menu.svg" alt="">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="./cooperation.html">Сотрудничество</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </nav>
                 </div>
                 <a href="#" class="header__logo">
                     <img src="./imgs/logo.svg" alt="Галеас">
@@ -43,15 +59,22 @@
                     </a>
                 </div>
     
-                <div class="lang">
-                    <label class="lang__label" for="lang">RU <img src="./imgs/icons/arrow-bottom.svg" alt=""></label>
-                    <select class="lang__select" id="lang">
-                        <option class="lang__option" value="#">Английский</option>
-                        <option class="lang__option" value="#">Русский</option>
-                        <option class="lang__option" value="#">Польский</option>
-                        <option class="lang__option" value="#">Немецкий</option>
-                    </select>                
+                    
+                <div class="lang_flex">
+                    <div class="form-group__lang">
+                        <div class="dropdown__lang">
+                            <button class="dropdown__button__lang">RU</button>
+                            <ul class="dropdown__list__lang">
+                                <li class="dropdown__list-item__lang" data-value="option">Английский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Русский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Польский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Немецкий</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -158,5 +181,10 @@
         </div>   
         <a href="#" class="footer__policy">Политика конфиденциальности</a>  
     </footer>
+    <script src="./js/questions.js"></script>
+    <script src="./js/dropdown_lang.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/popup.js"></script>
 </body>
 </html>
