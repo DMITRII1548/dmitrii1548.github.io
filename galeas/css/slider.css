@@ -98,6 +98,38 @@
     right: -40px;
 }
 
+.swiper-slider--log {
+    display: grid;
+    align-content: space-between;
+    width: 340px;
+    height: 240px;
+
+    padding: 20px;
+}
+
+.swiper__title--log {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+
+    color: #FFFFFF;
+
+    padding-left: 10px;
+    border-left: 5px solid #DDAA21;
+}
+
+.swiper__link--log {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+
+    color: #FFF;
+
+    border-bottom: 1px solid #FFF;
+
+    width: 97px;
+}
+
 @media screen and (max-width: 999px) {
     .swiper-button-prev {
         display: none;

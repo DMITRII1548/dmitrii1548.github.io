@@ -41,6 +41,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  font-family: 'Montserrat';
 }
 
 ul,
@@ -159,8 +160,104 @@ p{
     font-weight: 400;
 }
 
+.management_card_mobile{
+  display: none;
+}
+
 @media screen and (max-width:1440px){
     .container {
         padding: 0 14px;
     }
+
+        .more_shiping_card-img img {
+        width: 383px;
+    }
 }
+
+@media screen and (max-width:425px){
+  .managment_card_flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .managment_card_info {
+    margin-left: 0px;
+  }
+
+  .management_card-desktop{
+    display: none;
+  }
+
+  .management_card_mobile{
+    display: block;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .managment_card_img img{
+    width: 401px;
+  }
+
+
+  .management_card-text{
+    width: 320px;
+    height: 610px;
+    margin-left: 38px;
+  }
+  
+  .managment_card_info2{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width:375px){
+  .managment_card_flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .managment_card_info {
+    margin-left: 0px;
+  }
+
+  .management_card-desktop{
+    display: none;
+  }
+
+  .management_card_mobile{
+    display: block;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .managment_card_img img{
+    width: 350px;
+  }
+
+
+  .management_card-text{
+    width: 320px;
+    height: 610px;
+    margin-left: 14px;
+  }
+  
+  .managment_card_info2{
+    margin-top: 40px;
+  }
+
+  
+}
+
+

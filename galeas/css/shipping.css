@@ -238,7 +238,7 @@ p{
     background: url('../imgs/shiping.png')
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:1440px){
     .header__social{
       display: none;
     }
@@ -251,6 +251,123 @@ p{
 
     .header__logo{
         margin-left: 81px;
+    }
+
+    .wrapper_card_solution {
+        background-color: rgba(48, 48, 48, 0.6);
+        width: 318px;
+        height: 242px;
+        padding: 23px 23px;
+    }
+
+    .more_shiping_card-img img{
+        width: 406px;
+    }
+
+    .wrapper_card_solution {
+        background-color: rgba(48, 48, 48, 0.6);
+        width: 234px;
+        height: 242px;
+        padding: 23px 23px;
+    }
+
+    .silka_card {
+        margin-top: 140px;
+    }
+
+    .info_solution {
+        padding-right: 213px;
+    }
+
+    .more_shiping_card-img img {
+        width: 300px;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+    }
+
+    .wrapper_card_solution {
+        background-color: rgba(48, 48, 48, 0.6);
+        width: 305px;
+        height: 242px;
+        padding: 23px 23px;
+    }
+
+    .more_shiping_card-img img {
+        width: 413px;
+    }
+
+    .silka_card {
+        margin-top: 153px;
+    }
+
+    .silka_card2 {
+        margin-top: 136px;
+    }
+
+}  
+
+@media screen and (max-width:1024px){
+    .header__logo{
+        margin-left: 34px;
+    }
+
+    .wrapper_card_solution {
+        background-color: rgba(48, 48, 48, 0.6);
+        width: 228px;
+        height: 242px;
+        padding: 23px 23px;
+    }
+    
+    .more_shiping_card-img img {
+        width: 304px;
+    }
+
+    .silka_card {
+        margin-top: 137px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .header__social{
+      display: none;
+    }
+
+    .header__card{
+        width: 380px;
+        height: 580px;
+        margin: 40px 0 0 28px;
+    }
+
+    .header__logo {
+        margin-left: 41px;
+    }
+
+    h1{
+        text-align: center;
+
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .card_solution {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    .info_solution {
+        padding-right: 0;
     }
 }  
 

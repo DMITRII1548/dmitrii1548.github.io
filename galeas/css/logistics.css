@@ -177,7 +177,7 @@ p{
 }
 
 .inner{
-    padding: 120px 0;
+    padding: 35px 0;
 }
 
 
@@ -251,19 +251,19 @@ p{
 }
 
 .logistic_banner_img1{
-    background: url(../imgs/logistic1.png);
+    background: url(../imgs/logistic1.png)no-repeat center;
 }
 
 .logistic_banner_img2{
-    background: url(../imgs/logistic2.png);
+    background: url(../imgs/logistic2.png)no-repeat center;
 }
 
 .logistic_banner_img3{
-    background: url(../imgs/logistic3.png);
+    background: url(../imgs/logistic3.png)no-repeat center;
 }
 
 .logistic_banner_img4{
-    background: url(../imgs/logistic4.png);
+    background: url(../imgs/logistic4.png)no-repeat center;
 }
 
 
@@ -301,6 +301,63 @@ p{
     background: url('../imgs/logistic.png')
 }
 
+@media screen and (max-width:1440px){
+    .logistic_banner_card {
+        width: 100%;
+        background-color: #303030;
+        height: 380px;
+        padding: 0 53px;
+        margin-top: 40px;
+    }
+
+    .questions__title {
+        font-family: 'Bebas Neue Cyrillic';
+        font-size: 47px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: left;
+        color: #00583A;
+    }
+
+    .logistic_img{
+        margin-top: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+}  
+
+@media screen and (max-width:1024px){
+    .logistic_banner_card {
+        width: 100%;
+        background-color: #303030;
+        height: 380px;
+        padding: 0 10px;
+        margin-top: 40px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .logistic_img img{
+        width: 432px;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+}  
+
 @media screen and (max-width:425px){
     .header__social{
       display: none;
@@ -315,11 +372,116 @@ p{
     .header__logo{
         margin-left: 81px;
     }
+
+    .info_solution {
+        padding-right: 0px;
+    }
+
+    .questions__title {
+        font-family: 'Bebas Neue Cyrillic';
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: center;
+        color: #00583A;
+    }
+    
+    
+
+    .header__logo {
+        margin-left: 38px;
+    }
+
+    .logistic_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logistic_banner_text2 {
+        margin-top: 209px;
+        color: white;
+        margin-left: 12px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .logistic_img img {
+        width: 394px;
+    }
+
+    .swiper__container {
+        position: relative;
+        display: none;
+    }
+
+    .logistic_banner_flex {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .logistic_banner_img {
+        width: 340px;
+        height: 340px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .banner {
+        margin-top: 125px;
+        margin-bottom: 80px;
+    }
+
+    .logistic_banner_card {
+        width: 100%;
+        background-color: #303030;
+        height: 1545px;
+        padding: 0 10px;
+        margin-top: 40px;
+    }
+
+    .logistic_banner_text {
+        margin-top: 139px;
+        font-size: 8px;
+        text-align: left;
+        margin-left: 12px;
+    }
+    
 }  
 
 @media screen and (max-width:375px){
     .header__logo{
         margin-left: 34px;
+    }
+
+    .logistic_banner_img {
+        width: 303px;
+        height: 340px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .logistic_img img {
+        width: 344px;
+    }
+
+    .header__logo {
+        margin-left: -5px;
+    }
+
+    .questions__title {
+        font-family: 'Bebas Neue Cyrillic';
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: center;
+        color: #00583A;
     }
 }
 
