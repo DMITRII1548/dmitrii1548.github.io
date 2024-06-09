@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/btn.css">           
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/dropdown_lang.css">
+    <link rel="stylesheet" href="./css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__flex">
+            <div class="header__container">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="./cooperation.html">Сотрудничество</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </nav>
+                </div>
+                <a href="#" class="header__logo">
+                    <img src="./imgs/logo.svg" alt="Галеас">
+                </a>          
+            </div>
+            <div class="header__wrapper">
+                <a href="tel:+79999999999" class="header__phone">
+                    <img src="./imgs/icons/tel.svg" class="phone_img" alt="Телефон">
+                    <strong class="number">+7 (999) 999-99-99</strong>
+                </a>
+                <div class="header__socials">
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/mail.svg" alt="Почта">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/vk.svg" alt="VK">
+                    </a>
+    
+                    <a href="#" class="header__social">
+                        <img src="./imgs/icons/Whatsapp.svg" alt="Whats app">
+                    </a>
+                </div>
+    
+                    
+                <div class="lang_flex">
+                    <div class="form-group__lang">
+                        <div class="dropdown__lang">
+                            <button class="dropdown__button__lang">RU</button>
+                            <ul class="dropdown__list__lang">
+                                <li class="dropdown__list-item__lang" data-value="option">Английский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Русский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Польский</li>
+                                <li class="dropdown__list-item__lang" data-value="option">Немецкий</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb container">
+            <a href="#" class="breadcrumb__link">Главная/</a>
+            <a href="#" class="breadcrumb__link">Новости/</a>
+            <a href="#" class="breadcrumb__link breadcrumb__link--active">Новость</a>
+        </section>
+        <section class="news container">
+            <h2 class="news__title">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+            </h2>
+            <img src="./imgs/news.jpg" alt="" class="news__img">
+            <div class="news__wrapper">
+                <div class="news__container">
+                    <p class="news__txt">MSC is getting ready for Breakbulk Europe 2024. The event is scheduled to take place from 21 – 23 May at Ahoy Rotterdam and is expected to draw over 10,000 visitors across three days. </p>
+                </div>
+                <div class="news__container">
+                    <p class="news__txt">Our MSC Breakbulk experts will be at booth 2A20-B21 & 2A21, in Hall 2, to share our passion and expertise for project cargo. We will be at your disposal to discuss your needs and offer logistics solutions that best suit your business, no matter the type of project cargo you transport or the special handling it requires. MSC’s dedicated local customer care and expertise in the global transport of project cargo makes us the perfect partner for your oversized cargo shipments.  </p>
+                </div>
+                <div class="news__container">
+                    <strong class="news__strong">Thinking outside the box - smart solutions for oversized cargo</strong>
+                    <p class="news__txt">
+                        MSC has the experts, fleet and network to ensure your shipments are handled with utmost care at every stage of its journey. With over 50 years of experience in shipping goods of all shapes and sizes, our project cargo team can create safe, secure and competitive logistics solutions for all types of oversized freight, from aircraft parts to heavy machinery, oil-well equipment and locomotives. 
+                    </p>
+                </div>
+                <div class="news__container">
+                    <strong class="news__strong">Meet our experts at Breakbulk Europe 2024</strong>
+                    <p class="news__txt">Meet our experts at Breakbulk Europe 2024</p>
+                    <p class="news__txt">Location: Hall 2, 2A20-B21 & 2A21. </p>
+                    <p class="news__txt">Venue: Ahoyweg 10, 3084 BA Rotterdam </p>
+                    <p class="news__txt">Our Breakbulk experts are available to create smart solutions for your oversized cargo. You can also learn more about the event or find out more about MSC’s project cargo solutions.</p>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section class="details container">
+            <h2 class="details__title">Подробнее о галеас</h2>
+            <div class="details__cards">
+                <div class="details__card" style="background: url('./imgs/details/1.jpg');">
+                    <strong class="details__strong">О компании</strong>
+                </div>
+                <div class="details__card" style="background: url('./imgs/details/2.jpg');">
+                    <strong class="details__strong">Руководство</strong>
+                </div>
+                <div class="details__card" style="background: url('./imgs/details/3.jpg');">
+                    <strong class="details__strong">Миссия и ценности</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__txt">
+            © 2002-2024 Галеас. Все права защищены. Логистика, контейнерные перевозки, таможенное оформление, перевозка грузов Новороссийск, Москва.
+        </div>   
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>  
+    </footer>
+    <script src="./js/questions.js"></script>
+    <script src="./js/dropdown_lang.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>
