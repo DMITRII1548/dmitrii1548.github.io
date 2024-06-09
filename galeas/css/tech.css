@@ -1,0 +1,151 @@
+.tech {
+    display: grid;
+    gap: 30px;
+
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+
+.tech__title {
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+
+    max-width: 820px;
+
+    color: #00583A;
+}
+
+.tech__items {
+    display: grid;
+    gap: 20px;
+}
+
+.tech__item {
+    display: grid;
+    padding: 20px;
+
+    background-color: #FCFCFC;
+}
+
+.tech__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tech__header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+
+    color: #303030;
+}
+
+.tech__header--mob {
+    display: none;
+}
+
+.tech__btn {
+    width: 48px;
+}
+
+.tech__content {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    margin-top: 20px;
+
+    border-top: 1px solid #D9D9D9;
+}
+
+.tech__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tech__min-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+
+    color: #303030;
+}
+
+.tech__cols {
+    display: flex;
+    gap: 20px;
+}
+
+.tech__col {
+    display: grid;
+    gap: 10px;
+}
+
+.tech__span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+
+    color: #303030;
+}
+
+.tech__strong {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #303030;
+}
+
+@media screen and (max-width: 999px) {
+    .tech {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .tech__title {
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .tech__wrapper {
+        display: grid;
+    }
+
+    .tech__header--des {
+        display: none;
+    }
+
+    .tech__header--mob {
+        display: inline;
+    }
+
+    .tech__con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .tech__img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .tech__content {
+        display: grid;
+        gap: 20px;
+    }
+
+    .tech__cols {
+        flex-wrap: wrap;
+    }
+}
