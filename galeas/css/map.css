@@ -1,0 +1,62 @@
+.info__map{
+    width: 460px;
+    height: 528px;
+    background-color: #00583A;
+    padding: 40px;
+  }
+  
+  .map__flex{
+    display: flex;
+  }
+  
+  .map_swipe{
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .map_swipe:focus{
+    border-bottom: 1px solid white;
+  }
+  
+  .info__map ul{
+    color: white;
+    font-family: 'Montserrat';
+  }
+  
+  .info__map li{
+    display: flex;
+    margin-top: 20px;
+    font-weight: 400;
+    list-style-type: circle;
+  }
+
+  .mobi_map{
+    display: none;
+  }
+
+
+  @media screen and (max-width:1024px){
+  
+    .map_swipe {
+      font-size: 13px;
+  }
+  
+    .info__map__text1 li{
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    .desktop{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:425px){
+    .mobi_map{
+        display: block;
+      }
+
+      .desktop{
+        display: none;
+    }
+  }
+  

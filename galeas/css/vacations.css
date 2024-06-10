@@ -1,0 +1,101 @@
+.vacations {
+    display: grid;
+    gap: 40px;
+}
+
+.vacations__title {
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #00583A;
+}
+
+.vacations__input {
+    position: relative;
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+}
+
+.vacations__input::placeholder {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+
+    color: #303030;
+
+    transition: all 0.2s ease-in;
+}
+
+.vacations__input:focus {
+    border-color: #EBB82E;
+}
+
+.vacations__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+.vacations__card {
+    display: grid;
+    gap: 21px;
+    width: 450px;
+    background-color: #FCFCFC;
+
+    padding: 20px;
+}
+
+@media screen and (max-width: 999px) {
+    .vacations__cards {
+        justify-content: center;
+    }
+
+    .vacations__card {
+        width: 320px;
+    }
+}
+
+.vacations__container {
+    display: grid;
+    gap: 10px;
+}
+
+.vacations__header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+
+    color: #00583A;
+}
+
+.vacations__date {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+
+    color: #B6B6B6;
+}
+
+.vacations__txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+
+    color: #303030;
+}
+
+.btn--vacatioins {
+    text-align: center;
+                  
+    margin: 0 auto;
+    width: 260px;
+    padding: 18px 30px;
+}
