@@ -1,0 +1,87 @@
+.dropdown__lang{
+    position: relative;
+}
+
+
+.dropdown__button__lang {
+    position: relative;
+    display: block;
+    width: 87px;
+    height: 60px;
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding: 19px 17px;
+    font-weight: 700;
+    cursor: pointer;    
+}
+
+.dropdown__button__lang::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+    background: url(../imgs/icons/arrow-bottom.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown__button__lang:focus:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+    background: url(../imgs/icons/up-arrows.png);
+    width: 24px;
+    height: 24px;
+}
+
+
+.dropdown__list__lang {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 126px;
+    z-index: 5;
+    left: -21px;
+}
+
+.dropdown__list__lang--visible{
+    display: block;
+}
+
+.dropdown__list-item__lang{
+    margin: 0;
+    padding: 0;
+    border: 2px solid #D9D9D9;
+    border-bottom: 0px;
+    padding: 18px 11px;
+    cursor: pointer;
+}
+
+
+.dropdown__list-item__lang:first-child{
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown__list-item__lang:last-child{
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.dropdown__input-hidden{
+    display: none;
+}
