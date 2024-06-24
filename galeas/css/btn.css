@@ -1,0 +1,30 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #DDAA21;
+    padding: 18px 85px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+.btn span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+}
+
+.btn:hover {
+    background: #D1A01C;
+}
+
+.btn:active {
+    background: #EBB82E;
+}
+.btn:active span {
+    color: #FFDA78;
+}
+.btn:active svg > path {
+    transition: all 0.2s ease-in;
+    fill: #FFDA78;
+}
