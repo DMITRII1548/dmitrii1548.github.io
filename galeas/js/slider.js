@@ -1,7 +1,7 @@
 {
     new Swiper(".swiper", {
         spaceBetween: 20,
-        slidesPerView: document.documentElement.clientWidth > 1850 
+        slidesPerView: document.documentElement.clientWidth > 1535 
             ? 4 
             : document.documentElement.clientWidth > 900 
                 ? 3
