@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="#">Логотип</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Найти товар" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Найти</button>
+                </form>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <main class="container pb-5" style="min-height: calc(100vh - 146px); padding-top: 72px;">
+        <section class="mt-2">
+            <h1 class="text-center">Мужская одежда</h1>
+            <img src="./imgs/clothes.jpg" alt="Мужская одежда" class="w-100">
+            <p class="mt-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, impedit voluptatem commodi molestiae dolorem iste dolore animi ipsam quibusdam aperiam exercitationem veritatis beatae, natus excepturi autem hic sunt aspernatur minima!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur molestias, quibusdam debitis ad tempore esse odio ipsam blanditiis dolores praesentium ullam asperiores suscipit aspernatur doloribus aliquid rem officia iure. Itaque!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ullam labore quaerat facere illo laudantium, omnis deleniti quibusdam unde maiores non, natus aut explicabo corrupti repellendus expedita ratione corporis tempore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem delectus amet nisi ipsum doloribus corporis dolorum natus eligendi fugiat optio atque labore repellendus aspernatur tempore rerum mollitia, ut exercitationem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nam laborum consectetur a delectus nesciunt nemo earum qui maiores ad? Nesciunt reprehenderit ab rerum libero numquam quaerat esse consequatur a.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus adipisci nobis ducimus illum et consequatur ad repudiandae soluta nemo, at nisi, nostrum facilis eaque dignissimos? Similique nam iusto cum inventore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magni soluta recusandae ipsam nostrum labore incidunt illum quam quis? Voluptatem ea quasi a laborum ad necessitatibus ratione illo totam vero.
+            </p>
+        </section>
+        <section class="mt-5">
+            <h2>Популярные товары:</h2>
+            <div class="swiper swiper-products">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/1.jpg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Джинсы</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>10 000 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">15 000 ₽</span>
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/2.jpeg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Кросовки</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>9 990 ₽</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/3.jpg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Белая рубашка</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>10 000 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">15 000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/4.jpg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Классический синий костюм из новой коллекции</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>10 000 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">15 000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </section>
+        <section class="mt-5 container">
+            <h2 class="text-center">Отзывы наших клиентов:</h2>
+            <div class="container">
+                <div class="swiper swiper-testimonials" style="max-width: 400px;">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide card p-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./imgs/testimonials/1.png" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <strong>Александр</strong>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam assumenda aut magnam, dolorem adipisci doloremque consectetur, excepturi sit quo amet facere labore id maiores? Impedit quis exercitationem inventore incidunt.
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide card p-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./imgs/testimonials/1.png" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <strong>Дмитрий</strong>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam assumenda aut magnam, dolorem adipisci doloremque consectetur, excepturi sit quo amet facere labore id maiores? Impedit quis exercitationem inventore incidunt.
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide card p-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./imgs/testimonials/1.png" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <strong>Александр</strong>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam assumenda aut magnam, dolorem adipisci doloremque consectetur, excepturi sit quo amet facere labore id maiores? Impedit quis exercitationem inventore incidunt.
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide card p-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./imgs/testimonials/1.png" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <strong>Александр</strong>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quisquam assumenda aut magnam, dolorem adipisci doloremque consectetur, excepturi sit quo amet facere labore id maiores? Impedit quis exercitationem inventore incidunt.
+                        </p>
+                    </div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev-tes" style="left: -30px;"></div>
+                    <div class="swiper-button-next swiper-button-next-tes" style="right: -30px;"></div>
+                
+                </div>                
+            </div>
+
+        </section>
+        <section class="mt-5">
+            <h2>Товары со скидкой:</h2>
+            <div class="swiper swiper-products">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/1.jpg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Джинсы</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>10 000 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">15 000 ₽</span>
+                        </a>
+                    </div>
+
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/2.jpeg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Кросовки</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>9 990 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">12 000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/3.jpg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Белая рубашка</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>10 000 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">15 000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card" style="width: 300px;">
+                    <a href="#">
+                        <img src="./imgs/products/4.jpg" class="card-img-top">
+                    </a>
+                    
+                    <div class="card-body">
+                        <a href="#" class="text-decoration-none text-body">
+                            <h4 class="card-title text-center">Классический синий костюм из новой коллекции</h4>
+                        </a>
+                        <a href="#" class="d-flex justify-content-center gap-1 text-decoration-none text-body">
+                            
+                            <div class="pt-1">
+                                <strong>10 000 ₽</strong>
+                            </div>
+                            <span class="text-decoration-line-through">15 000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="card-footer mt-3 d-grid gap-2">
+                        <a href="#" class="btn btn-primary w-100">Купить на WB</a>
+                        <a href="#" class="btn btn-primary w-100">Купить на Ozon</a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </section>
+        <section class="mt-5">
+            <h2 class="text-center">Не нашли нужный товар? Больше товаров в каталоге</h2>
+            <a href="./catalog.html" class="w-100 btn btn-outline-dark mt-2"><strong>Каталог</strong></a>
+        </section>
+        <section class="mt-5">
+            <h2>Остались вопросы?</h2>
+            <form class="bg-body-tertiary p-2 rounded">
+                <p class="fs-5">Заполните заявку и наш специалист свяжется с вами</p>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><strong>Ваша почта:</strong></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><strong>Ваш вопрос:</strong></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>        
+                <div class="mb-3">
+                    <button class="btn btn-primary">Отправить</button>
+                </div>        
+            </form>
+        </section>
+    </main>
+    <footer class="bg-body-tertiary">
+        <div class="container">
+            <div class="py-3">
+                <div class="d-lg-flex d-grid justify-content-lg-between flex border-bottom border-secondary pb-5 flex-wrap gap-3">
+                    <div class="d-grid justify-content-lg-start justify-content-center">
+                        <h6>Свяжитесь с нами:</h6>
+                        <a href="tel:+77777" class="text-dark-emphasis"><img src="./imgs/icons/phone.png" alt="Номер телефона" style="width: 25px; height: 25px;"> +7 (777)-777-777</a>
+                    </div>
+
+                    <div class="d-grid justify-content-lg-start justify-content-center">
+                        <h6 class="text-lg-left text-center">Мы в социальных сетях:</h6>
+                        <div class="d-flex justify-content-center">
+                            <a href="#"><img style="width: 30px; height: 30px;" src="./imgs/icons/insta.svg" alt=""></a>
+                            <a href="#"><img style="width: 30px; height: 30px;" src="./imgs/icons/insta.svg" alt=""></a>
+                            <a href="#"><img style="width: 30px; height: 30px;" src="./imgs/icons/insta.svg" alt=""></a>
+                            <a href="#"><img style="width: 30px; height: 30px;" src="./imgs/icons/insta.svg" alt=""></a>
+                            <a href="#"><img style="width: 30px; height: 30px;" src="./imgs/icons/insta.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-3 d-lg-flex d-grid justify-content-lg-between gap-2 pt-5 text-lg-left text-center">
+                    <span>
+                        © 2020 Copyright: <a class="text-body" href="#">domain.com.</a> 
+                    </span>
+                    <span>
+                        Все права защищены <a class="text-body" href="#">политикой конфидициальности и условиями пользования</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/slider-products.js"></script>
+<script src="./js/slider-testimonials.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
