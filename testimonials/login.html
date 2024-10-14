@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/@preline/overlay@2.5.0/index.min.js
+    "></script>
+</head>
+<body class="text-white bg-slate-900">
+    
+    <header class="text-white w-full max-w-screen-xl mx-auto ">
+        <nav class="px-4 lg:px-8 py-4">
+            <ul class="flex justify-between">
+                <li>
+                    <a href="#">
+                        <img src="./imgs/logo.png" alt="Логотип"  class="w-[50px] h-[50px]">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="font-semibold text-xl">Войти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacts" class="w-full max-w-screen-xl mx-auto ">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h1 class="text-3xl text-center sm:text-5xl lg:text-6xl font-bold">Вход</h1>
+                <form action="#" class="space-y-4 mt-6">
+                    <div>
+                        <label for="email" class="block mb-2 text-lg font-medium text-white">Ваш email *</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="password" class="block mb-2 text-lg font-medium text-white">Пароль *</label>
+                        <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Пароль" required>
+                    </div>
+                    <div class="flex justify-between gap-2">
+                        <button type="submit" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Отправить</button>
+                        <a href="#" class="text-white font-semibold">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rounded-lg shadow bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="./imgs/logo.png" class="h-8" alt="Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Service</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#about" class="hover:underline me-4 md:me-6">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#plans" class="hover:underline me-4 md:me-6">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Условия пользования</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="hover:underline">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Service.com</a>. Все права защищены.</span>
+        </div>
+    </footer>
+</body>
+</html>

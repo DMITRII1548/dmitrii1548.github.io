@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/@preline/overlay@2.5.0/index.min.js
+    "></script>
+</head>
+<body class="text-white bg-slate-900">
+    
+    <header class="text-white w-full max-w-screen-xl mx-auto ">
+        <nav class="px-4 lg:px-8 py-4">
+            <ul class="flex justify-between">
+                <li>
+                    <a href="#">
+                        <img src="./imgs/logo.png" alt="Логотип"  class="w-[50px] h-[50px]">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="font-semibold text-xl">Войти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="px-4 lg:px-8 py-8 w-full flex flex-col gap-3 justify-center w-full max-w-screen-xl mx-auto ">
+            <h1 class="text-center text-3xl sm:text-5xl lg:text-6xl font-bold">Улучшаем отзывы</h1>
+            <img src="./imgs/index/heading.webp" alt="" class="w-full">
+        </section>
+
+        <section id="about" class="px-4 lg:px-8 py-8 w-full w-full max-w-screen-xl mx-auto ">
+            <h2 class="text-center text-2xl sm:text-5xl lg:text-5xl font-bold">О нас</h2>
+            <p class="text-lg p-8 w-72 sm:w-4/5 text-center mx-auto"> <em>Example.com</em> - это сервис который помогает увеличивать количество
+                позитивных отзывов и перехватывать негативные отзывы, до того как клиенты
+                начнут ругать ваш бизнес в интернете.</p>
+            <div>
+                <img src="./imgs/index/about.jpg" alt="О нас">
+            </div>
+        </section>
+
+        <section id="plans" class="px-4 lg:px-8 py-8 w-full w-full max-w-screen-xl mx-auto ">
+            <h2 class="text-center text-2xl sm:text-5xl lg:text-5xl font-bold">Наши Тарифы</h2>
+            <div class="flex flex-wrap gap-3 mt-3">
+                <!--Pricing Card-->
+                <div class="flex flex-col mx-auto max-w-sm text-gray-900 rounded-2xl bg-indigo-50 transition-all duration-500 hover:bg-indigo-100 ">
+                    <div class="p-6 xl:py-9 xl:px-12">
+                        <h3 class="font-manrope text-2xl font-bold mb-3">Start</h3>
+                        <div class="flex items-center mb-6">
+                            <span class="font-manrope mr-2 text-3xl font-semibold text-indigo-600">5 000 руб</span>
+                            <span class="text-xl text-gray-500 ">/ в месяц</span>
+                        </div>
+                        <!--List-->
+                        <ul class="mb-12 space-y-6 text-left text-lg ">
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Доступ к сервису по сбору и аналитике отзывов</span>
+                            </li>
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Создание карточки вашей компании</span>
+                            </li>
+                            <li>
+                                <button onclick="openModal('register')" type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Выбрать</button>
+                            </li>
+                        </ul>
+                        <!--List End-->
+                    </div>
+                </div> 
+                <!-- Pricing Card End -->
+                <!--Pricing Card-->
+                <div class="flex flex-col mx-auto max-w-sm text-gray-900 rounded-2xl bg-indigo-50 transition-all duration-500 hover:bg-indigo-100 ">
+                    <div class="p-6 xl:py-9 xl:px-12">
+                        <h3 class="font-manrope text-2xl font-bold mb-3">Middle</h3>
+                        <div class="flex items-center mb-6">
+                            <span class="font-manrope mr-2 text-3xl font-semibold text-indigo-600">25 000 руб</span>
+                            <span class="text-xl text-gray-500 ">/ в месяц</span>
+                        </div>
+                        <!--List-->
+                        <ul class="mb-12 space-y-6 text-left text-lg ">
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Доступ к сервису по сбору и аналитике отзывов</span>
+                            </li>
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Создание карточки вашей компании</span>
+                            </li>
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Наши специалисты будут улучшать ваши отзывы.</span>
+                            </li>
+                            <li>
+                                <button onclick="openModal('register')" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Выбрать</button>
+                            </li>
+                        </ul>
+                        <!--List End-->
+                    </div>
+                </div> 
+                <!-- Pricing Card End -->
+                <!--Pricing Card-->
+                <div class="flex flex-col mx-auto max-w-sm text-gray-900 rounded-2xl bg-indigo-50 transition-all duration-500 hover:bg-indigo-100 ">
+                    <div class="p-6 xl:py-9 xl:px-12">
+                        <h3 class="font-manrope text-2xl font-bold mb-3">Pro</h3>
+                        <div class="flex items-center mb-6">
+                            <span class="font-manrope mr-2 text-3xl font-semibold text-indigo-600">125 000 руб</span>
+                            <span class="text-xl text-gray-500 ">/ в месяц</span>
+                        </div>
+                        <!--List-->
+                        <ul class="mb-12 space-y-6 text-left text-lg ">
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Доступ к сервису по сбору и аналитике отзывов</span>
+                            </li>
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Создание карточки вашей компании</span>
+                            </li>
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Наши специалисты будут улучшать ваши отзывы.</span>
+                            </li>
+                            <li class="flex items-center space-x-4">
+                                <!-- Icon -->
+                                <svg class="flex-shrink-0 w-6 h-6 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 14.7875L13.0959 17.8834C13.3399 18.1274 13.7353 18.1275 13.9794 17.8838L20.625 11.25M15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15C27.5 21.9036 21.9036 27.5 15 27.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <span>Размещение рекламы вашей компании в интернете.</span>
+                            </li>
+                            <li>
+                                <button onclick="openModal('register')" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Выбрать</button>
+                            </li>
+                        </ul>
+                        <!--List End-->
+                    </div>
+                </div> 
+                <!-- Pricing Card End -->
+                
+                <!-- Modal -->
+                <div id="register" class="opacity-100 hidden hs-overlay-open:duration-500 size-full fixed top-0 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="hs-basic-modal-label">
+                    <div class="sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+                        <form method="post" action="#" class="flex flex-col border shadow-sm rounded-xl pointer-events-auto bg-neutral-800 border-neutral-700 shadow-neutral-700/70">
+                            <div class="flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700">
+                                <h3 id="hs-basic-modal-label" class="font-bold text-white">
+                                    Создайте заявку
+                                </h3>
+                                <button onclick="closeModal('register')" type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600">
+                                    <span class="sr-only">Close</span>
+                                    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="flex flex-col gap-3 p-4 space-x-4 overflow-y-auto">
+                                <div class="ml-4">
+                                    <label for="name" class="block mb-2 text-lg font-medium text-white">Ваше имя *</label>
+                                    <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Имя" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2 text-lg font-medium text-white">Ваш email *</label>
+                                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                                </div>
+                                <div>
+                                    <label for="tel" class="block mb-2 text-lg font-medium text-white">Телефон *</label>
+                                    <input type="tel" id="tel" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Номер телефона" required>
+                                </div>
+                            </div>
+                            <div class="flex justify-end items-start gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
+                                <button onclick="closeModal('register')" type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" data-hs-overlay="#hs-basic-modal">
+                                    Отмена
+                                </button>
+                                <button type="submit" class="text-white inline-flex bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+                                    Отправить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Modal End -->
+            </div>
+        </section>
+
+        <section id="contacts" class="w-full max-w-screen-xl mx-auto ">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="text-center text-2xl sm:text-5xl lg:text-5xl font-bold">Свяжитесь с нами</h2>
+                <p class="mb-4 lg:mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Есть вопросы? Хотите протестировать? Хотите что-то уточнить? Дайте нам знать. Пожалуйста, заполните форму</p>
+                <form action="#" class="space-y-4">
+                    <div>
+                        <label for="email" class="block mb-2 text-lg font-medium text-white">Ваш email *</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-lg font-medium text-white">Сообщение *</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Напишите сообщение..."></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="rounded-lg shadow bg-gray-900 m-4">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="./imgs/logo.png" class="h-8" alt="Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Service</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#about" class="hover:underline me-4 md:me-6">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#plans" class="hover:underline me-4 md:me-6">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="./privacy_policy.html" class="hover:underline me-4 md:me-6">Условия пользования</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="hover:underline">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Service.com</a>. Все права защищены.</span>
+        </div>
+    </footer>
+    <script 
+        src="./scripts/modal.js"
+    ></script>
+</body>
+</html>
