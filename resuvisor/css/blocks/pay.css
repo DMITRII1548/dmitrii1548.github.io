@@ -1,0 +1,167 @@
+.pay {
+    font-family: 'Roboto flex', serif;
+    max-width: 490px;
+    padding: 62px 16px;
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    z-index: 999;
+}
+
+.pay__blue {
+    color: #1EADE8;
+}
+
+.pay__info {
+    font-size: 22px;
+    color: #09425D;
+    margin-left: 60px;
+}
+
+.pay__title {
+    display: flex;
+    align-items: end;
+    gap: 13px;
+
+    font-weight: 500;
+    font-size: 24px;
+
+    margin-top: 20px;
+}
+
+.pay__title img {
+    margin-bottom: 18px;
+}
+
+.pay__btn {
+    width: 100%;
+    background: #1EADE8;
+    color: #fff;
+    padding: 11px 0;
+
+    font-weight: 600;
+    font-size: 32px;
+    border-radius: 5px;
+
+    margin: 34px 0;
+
+    transition: all 0.2s ease-in;
+}
+
+.pay__btn:hover {
+    opacity: 0.9;
+}
+
+.pay__list {
+    display: grid;
+    gap: 20px;
+}
+
+.pay__item {
+    display: flex;
+    gap: 12px;
+    
+    color: #3A3A3A;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.pay__ok {
+    position: relative;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    border: 2px solid #1EADE8;
+    
+    margin-top: 4px;
+
+    cursor: pointer;
+}
+
+.pay__ok-red {
+    border-color: #C52931;
+}
+
+.pay__ok-blue-clicked::before {
+    content: "";
+    position: absolute;
+
+    top: 3px;
+    left: 4px;
+
+    width: 20px;
+    height: 21px;
+
+    background: url('./../../imgs/ok-blue.png');
+    z-index: 999;
+}
+
+.pay__ok-red-clicked::before {
+    content: "";
+    position: absolute;
+
+    top: 3px;
+    left: 4px;
+
+    width: 20px;
+    height: 21px;
+
+    background: url('./../../imgs/ok-red.png');
+    z-index: 999;
+}
+
+
+.pay__number {
+    font-size: 96px;
+}
+
+@media screen and (max-width: 999px) {
+    .pay {
+        padding: 20px 14px;
+    }
+    
+    .pay__info {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .pay__title {
+        text-align: center;
+        font-size: 15px;
+    
+        margin-top: 20px;
+    }
+
+    .pay__title > img {
+        display: none;
+    }
+    
+    .pay__btn {
+        padding: 10px 0;
+    }
+    
+    .pay__list {
+        gap: 19px;
+    }
+    
+    .pay__item {
+        gap: 8px;
+        
+        font-size: 12px;
+    }
+
+    .pay__number {
+        font-size: 48px;
+    }
+}

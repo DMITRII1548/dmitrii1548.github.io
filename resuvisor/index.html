@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUVISOR</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/blocks/header.css">
+    <link rel="stylesheet" href="./css/blocks/main.css">
+    <link rel="stylesheet" href="./css/blocks/premium.css">
+    <link rel="stylesheet" href="./css/blocks/pay.css">
+    <link rel="stylesheet" href="./css/blocks/footer.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="#" class="header__logo">
+            <img src="./imgs/logo.svg" class="header__logo-img" alt="Логотип">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item header__item--des header__item--border">
+                    <a href="#" class="header__link">О нас</a>
+                </li>
+                <li class="header__item header__item--des">
+                    <a href="#" class="header__link">Полезные статьи</a>
+                </li>
+                <li class="header__item header__item--des">
+                    <a href="#" class="header__link">Создать резюме</a>
+                </li>
+                <li class="header__item header__item--des">
+                    <a href="#" class="header__link">Вакансии ЦЗ</a>
+                </li>
+                <li class="header__item header__item--des">
+                    <a href="#" class="header__link">Топ вакансий</a>
+                </li>
+
+                <li class="header__item">
+                    <a href="#" class="header__link header__link--login">
+                        <img src="./imgs/user.svg" alt="User" class="header__user">
+                        <span>Войти</span>
+                    </a>
+                </li>
+                <li class="menu">
+                    <img src="./imgs/menu.svg" alt="" id="switchMenuBtn">
+                </li>
+            </ul>
+        
+        </nav>
+
+        <nav class="header__nav--mobile container none" id="menu">
+            <ul class="header__list--mobile">
+                <li class="header__item">
+                    <a href="#" class="header__link">О нас</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Полезные статьи</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Создать резюме</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Вакансии ЦЗ</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Топ вакансий</a>
+                </li>                
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="container main">
+            <div class="main__line"></div>
+            <div class="main__col"></div>
+            <div class="pay">
+                <p class="pay__info">
+                    Скачать готовое резюме в Word (DOCs) 
+                    или PDF, а также отправить на e-mail 
+                    можно только с подпиской <span class="pay__blue">премиум</span>
+                </p>
+                <h1 class="pay__title">
+                    <img src="./imgs/ok.png" alt="">
+                    <span>
+                        ВСЕГО ЗА <span class="pay__blue"><span class="pay__number">89</span> РУБЛЕЙ</span> ДОСТУП 
+                        К ПРЕМИУМ-АККАУНТУ НА 3 ДНЯ
+                    </span>
+                </h1>
+                <button class="pay__btn">
+                    ОПЛАТИТЬ
+                </button>
+                <ul class="pay__list">
+                    <li class="pay__item">
+                        <div class="pay__ok pay__ok-blue" id="agreeBlueBtn">
+                        </div>
+                        <div class="pay__txt">
+                            Ознакомлен и согласен с <span class="pay__blue">лицензионным соглашением</span> (офертой) и согласен на обработку <span class="pay__blue">персональных данных </span>
+                        </div>
+                    </li>
+                    <li class="pay__item">
+                        <div class="pay__ok pay__ok-red" id="agreeRedBtn"></div>
+                        <div class="pay__txt">
+                            Оплачивая услугу Вы подтверждаете, что ознакомилась 
+                            и согласна <span class="pay__blue">с условиями использования сервиса 
+                            и правилами оплаты.</span> После оплаты 89 рублей Вы получите доступ на 3 дня к премиум-аккаунту с автопродлением на 30 дней за 489 рублей. Отключить продление можно в любой момент.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__container">
+                <div class="premium">
+                    <h3 class="premium__title font-premium">PREMIUM</h3>
+                    <ul class="premium__list">
+                        <li class="premium__block">
+                            <div class="premium__item">
+                                <img src="./imgs/cursor.svg" alt="" class="premium__icon">
+                                <strong class="premium__bold">БЕЗ ЛИМИТОВ И ОГРАНИЧЕНИЙ:</strong>
+                            </div>
+                            <ul class="premium__sublist">
+                                <li class="premium__subitem">Редактируйте сведения и меняйте фото</li>
+                                <li class="premium__subitem">Изменяйте оформление</li>
+                                <li class="premium__subitem">Скачайте готовые варианты в WORD и PDF 
+                                    или отправляйте на электронную почту</li>
+                            </ul>
+                        </li>
+                        <li class="premium__item">
+                            <img src="./imgs/cursor.svg" alt="" class="premium__icon">
+                            <strong class="premium__bold">ВСЕ ШАБЛОНЫ И ФОРМАТЫ</strong>
+                        </li>
+                        <li class="premium__item">
+                            <img src="./imgs/cursor.svg" alt="" class="premium__icon">
+                            <strong class="premium__bold">ПРИОРИТЕТНАЯ ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__info">
+                    <h4 class="main__title">
+                        <span>Новый <span class="font-premium">PREMIUM</span></span> 
+                        <img src="./imgs/locate.svg" class="main__logo" alt="">
+                    </h4>
+                    <p class="main__info">
+                        Сергей из Санкт-Петербурга оформил <br> резюме и сопроводительное письмо
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer container ">
+        <nav class="footer__nav">
+            <a href="#" class="footer__link">Обработка персональных данных</a>
+            <a href="#" class="footer__link">Лицензионное соглашение</a>
+            <a href="#" class="footer__link">Обработка cookie файлов</a>
+            <a href="#" class="footer__link">Помощь с сайтом</a>
+
+            <a href="#" class="footer__link">Согласие на обработку персональных данных</a>
+            <a href="#" class="footer__link">Правила оплаты</a>
+            <a href="#" class="footer__link">Отменить подписку</a>
+        </nav>
+
+        <ul class="footer__list">
+            <li class="footer__item">
+                <img src="./imgs/items/1.svg" alt="" class="footer__item-img">
+                <span class="footer__item-txt">ResuVisor является зарегистрированным товарным знаком</span>
+            </li>
+            <li class="footer__item">
+                <img src="./imgs/items/2.svg" alt="" class="footer__item-img">
+                <span class="footer__item-txt">Сайт зарегистрирован в Реестре операторов Роскомнадзора</span>
+            </li>
+            <li class="footer__item">
+                <img src="./imgs/items/3.svg" alt="" class="footer__item-img">
+                <span class="footer__item-txt">Программное обеспечение сервисов сайта ResuVisor зарегистрировано в Роспатенте</span>
+            </li>
+        </ul>
+        <div class="footer__row">
+            <div class="footer__col-left">
+
+                <a href="#" class="footer__play--mob">
+                    <img src="./imgs/google-play.svg" alt="" class="footer__play-img">
+                </a>   
+
+                <div class="footer__socials">
+                    <a href="#" class="footer__social"><img src="./imgs/socials/1.svg" alt=""></a>
+                    <a href="#" class="footer__social"><img src="./imgs/socials/2.svg" alt=""></a>
+                    <a href="#" class="footer__social"><img src="./imgs/socials/3.svg" alt=""></a>
+                    <a href="#" class="footer__social"><img src="./imgs/socials/4.svg" alt=""></a>
+                </div>
+
+                <a href="#" class="footer__play">
+                    <img src="./imgs/google-play.svg" alt="" class="footer__play-img">
+                </a>
+
+                <div class="footer__info">
+                    <p class="footer__info-txt">© 2022-2025 ResuVisor</p>
+                    <p class="footer__info-txt">Все права защищены. При копировании материалов, ссылка на источник обязательна.</p>
+                </div>             
+            </div>
+            <div class="footer__col-right">
+                <img src="./imgs/payment.jpg" alt="" class="footer__payment">
+            </div>
+        </div>
+        <div class="footer__privacy">
+            <span class="footer__recaptcha">
+                Этот сайт защищен reCAPTCHA и к нему применяется 
+            </span>
+            <span class="footer__privacy-policy">
+                Политика конфиденциальности Google и Условия предоставления услуг.
+            </span>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/agreement.js"></script>
+</body>
+</html>

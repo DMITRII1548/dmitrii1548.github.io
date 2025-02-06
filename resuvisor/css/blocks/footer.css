@@ -1,0 +1,173 @@
+.footer {
+    font-family: 'Roboto flex', serif;
+    padding-top: 28px;
+    padding-bottom: 30px;
+
+    background: #F9F9F9;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 32px;
+    max-width: 900px;
+}
+
+.footer__link {
+    font-size: 15px;
+    font-weight: 300;
+    color: #09425D;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer__link:hover {
+    opacity: 0.9;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__list {
+    display: grid;
+    gap: 7px;
+}
+
+.footer__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__item-img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer__item-txt {
+    font-size: 14px;
+
+    font-weight: 300;
+    color: #000;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 8px;
+}
+
+.footer__social {
+    width: 28px;
+    height: 28px;
+
+    padding: 6px;
+
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    background: #fff;
+
+    transition: all 0.2s ease-in;
+}
+
+.footer__social:hover {
+    background: #F9F9F9;
+}
+
+.footer__social > img {
+    width: 16px;
+}
+
+.footer__play-img {
+    height: 28px;
+}
+
+.footer__info {
+    display: grid;
+
+    font-size: 11px;
+    font-weight: 300;
+
+    line-height: 1.5;
+
+    color: #0D1018;
+}
+
+.footer__payment {
+    width: 177px;
+}
+
+.footer__privacy {
+    font-size: 10px;
+    line-height: 1.5;
+
+    margin-top: 13px;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.footer__recaptcha {
+    color: #0D1018;
+}
+
+.footer__privacy-policy {
+    color: #09425D;
+}
+
+.footer__play--mob {
+    display: none;
+}
+
+@media screen and (max-width: 999px) {
+    .footer {
+        padding-top: 26px;
+        padding-bottom: 30px;
+    }
+    
+    .footer__nav {
+        gap: 13px;
+    }
+    
+    .footer__link {
+        font-size: 12px;
+    }
+
+    
+    .footer__list {
+        margin-top: 30px;
+        gap: 14px;
+    }
+    
+    .footer__item {
+        gap: 6px;
+    }
+    
+    .footer__item-txt {
+        font-size: 13px;
+    }
+    
+    .footer__row {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .footer__col-left {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__play {
+        display: none;
+    }
+
+    .footer__play--mob {
+        display: block;
+        margin-top: 30px;
+    }
+}
