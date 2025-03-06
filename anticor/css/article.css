@@ -1,0 +1,42 @@
+.article {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 20px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.article__card {
+    display: grid;
+    gap: 20px;
+
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.article__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+@media screen and (max-width: 999px) {
+    .article {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .article__card {
+        gap: 10px;
+    }
+}
