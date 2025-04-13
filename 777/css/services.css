@@ -1,0 +1,130 @@
+.services {
+    position: absolute;
+    right: 0;
+    top: 95px;
+
+    width: 100vw;
+    height: auto;
+    z-index: 9;
+
+    background-color: #FFF;
+}
+
+.services__cross {
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    z-index: 99;
+
+    cursor: pointer;
+}
+
+.services__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+
+    margin-top: 74px;
+
+    background-color: #F3EBEB;
+    padding-top: 58px;
+    padding-bottom: 58px;
+
+    padding-left: 242px;
+    padding-right: 180px;
+}
+
+.services__items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.services__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.services__item > strong {
+    color: #404040;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.services__item span {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: right;
+    vertical-align: middle;
+
+    color: #404040;
+    min-width: 150px;
+}
+
+.services__item span.services__red {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+    color: #F46260;
+}
+
+@media screen and (max-width: 1300px) {
+    .services__wrapper {
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .services {
+        top: 210px;
+    }
+
+    .services__cross {
+        display: none;
+    }
+
+    .services__wrapper {
+        padding: 10px;
+        margin-top: 45px;
+    }
+
+    .services__wrapper, .services__items, .services__list {
+        gap: 10px;
+    }
+
+    .services__item > strong {
+        font-size: 14px;
+        min-width: 188px;
+    }
+
+    .services__item span {
+        font-size: 14px;
+        min-width: 92px;
+    }
+
+    .services__item span.services__red {
+        font-size: 8px;
+    }
+
+    .services__diagnostic .services__item > div {
+        display: grid;
+    }
+}

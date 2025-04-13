@@ -1,0 +1,135 @@
+.testimonials {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.testimonials__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.testimonials__container {
+    display: grid;
+    gap: 20px;
+    justify-items: start;
+
+    margin-top: 80px;
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+.testimonials__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonials__comment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 480px;
+
+    margin-left: 188px;
+
+    background-color: #FFF;
+
+    border-radius: 10px;
+
+    padding: 20px;
+    padding-top: 11px;
+
+    position: relative;
+}
+
+.testimonials__comment::before {
+    content: "";
+    position: absolute;
+    top: -29px;
+    left: 11px;
+
+    border-right: 29px solid transparent;
+    border-bottom: 40px solid #FFF; 
+    transform: rotate(20deg);
+}
+
+.testimonials__p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+    color: #404040;
+}
+
+.testimonials__stars {
+    display: flex;
+    gap: 2px;
+}
+
+body > main > section.testimonials.container.wrapper > div > div:nth-child(2) {
+    justify-self: end;
+}
+
+@media screen and (max-width: 999px) {
+    .testimonials {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .testimonials__title {
+        font-size: 20px;
+    }
+
+    .testimonials__container {
+        margin-top: 20px;
+    }
+
+    .testimonials__card {
+        gap: 17px;
+        padding: 13px;
+    }
+
+    .testimonials__img {
+        width: 69px;
+        height: 69px;
+    }
+
+    .testimonials__comment {
+        margin-left: 0;
+        padding: 13px;
+        width: 276px;
+
+        gap: 8px;
+    }
+
+    .testimonials__comment::before {
+        border-right: 13px solid transparent;
+        border-bottom: 13px solid #FFF; 
+
+        top: -11px;
+        left: 11px;
+    }
+
+    .testimonials__p {
+        font-size: 10px;
+    }
+
+    .testimonials__stars img {
+        width: 12px;
+    }
+
+    body > main > section.testimonials.container.wrapper > div > div:nth-child(2) {
+        justify-self: start;
+    }
+}

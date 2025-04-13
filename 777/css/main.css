@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #F3EBEB;
+}
+
+.container {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none !important;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 999px) {
+    .container {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}

@@ -1,0 +1,129 @@
+.benefits {
+
+}
+
+.benefits__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #404040;
+    margin-bottom: 40px;
+}
+
+.benefits__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.benefits__card {
+    display: grid;
+    gap: 102px;
+    justify-items: center;
+    max-width: 437px;
+    width: 100%;
+    background: #F7D3AB75;
+    padding: 100px 30px 40px 30px;
+    border-radius: 20px;
+}
+
+.benefits__card strong {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.benefits__imgs {
+    display: flex;
+    gap: 14px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.benefits__imgs > img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 437px;
+    min-width: 100px;
+}
+
+.benefits__banner {
+    width: 100%;
+    padding: 28px 40px;
+    background-color: #F7D3AB75;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.benefits__banner-wrapper {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.benefits__banner strong {
+    width: 569px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 999px) {
+    .benefits__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .benefits__cards {
+        gap: 2px;
+    }
+
+    .benefits__card {
+        padding: 8px 3px 18px 3px;
+        gap: 20px;
+    }
+
+    .benefits__card strong {
+        font-size: 10px;
+    }
+
+    .benefits__card img {
+        width: 50px;
+    }
+
+    .benefits__imgs {
+        margin-top: 20px;
+    }
+
+    .benefits__imgs {
+        gap: 2px;
+    }
+
+    .benefits__banner {
+        padding: 8px 80px;
+    }
+
+    .benefits__banner-wrapper {
+        gap: 20px;
+    }
+
+    .benefits__banner img {
+        width: 50px;
+    }
+
+    .benefits__banner strong {
+        font-size: 10px;
+        width: 143px;
+    }
+}

@@ -1,0 +1,133 @@
+.map {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.map__container {
+    background-color: #F3EBEB;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.map__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #404040;
+    margin-bottom: 12px;
+}
+
+.map__switch {
+    width: 119px;
+    height: 46px;
+    background-color: #F7D3AB;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 12px;
+
+    position: relative;
+    cursor: pointer;
+}
+
+.map__circle {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 3px;
+    right: 4px;
+
+    background-color: #FFF;
+    border-radius: 48%;
+}
+
+.map__circle > img {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+}
+
+.map__switch--left {
+    background-color: #404040;
+}
+
+.map__switch--left .map__circle {
+    left: 3px;
+}
+
+.map__switch--left .map__circle > img {
+    left: 14px;
+    transform: rotate(180deg);
+}
+
+.map__open {
+    display: grid;
+    justify-items: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-top: 20px;
+}
+
+.map__list {
+    display: grid;
+    gap: 8px;
+}
+
+.map__item {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+    color: #000;
+}
+
+.map__open--mob {
+    display: none;
+}
+
+@media screen and (max-width: 999px) {
+    .map {
+        margin: 40px 0;
+    }
+
+    .map__title {
+        font-size: 14px;
+    }
+
+    .map__switch {
+        width: 120px;
+        transform: scale(0.7);
+    }
+
+    .map__open {
+        display: none;
+    }
+
+    .map__open--mob {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        margin-top: 16px;
+    }
+
+    .map__list {
+        gap: 4px;
+    }
+
+    .map__item {
+        font-size: 10px;
+    }
+}
