@@ -26,7 +26,6 @@
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
-    text-decoration: underline !important;
     text-decoration-style: solid;
     text-decoration-offset: 0%;
     text-decoration-thickness: 0%;
@@ -38,7 +37,7 @@
     border: 1px solid #F46260;
     border-radius: 20px;
 
-    padding: 17px 243px;
+    padding: 17px 173px;
 
     transition: all 0.2s ease-in;
 
