@@ -1,0 +1,108 @@
+/* Orange colors elements */
+.nav-link {
+    font-weight: 600;
+    color: #FF8800;
+}
+
+.nav-link:hover {
+    color: #F59C36;
+}
+
+.text-orange {
+    font-weight: 600;
+    color: #FF8800;
+    transition: all 0.2s ease-in;
+}
+
+a.text-orange:hover {
+    color: #F59C36;
+}
+
+.bg-orange {
+    background-color: #FF8800;
+}
+
+.btn-orange {
+    color: #fff;
+    background-color: #FF8800;
+    border: 1px solid #FF8800;
+    font-weight: 600;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    background-color: #F59C36;
+    border-color: #F59C36;
+    color: #fff;
+}
+
+.btn-orange:active {
+    background-color: #e67600;
+    border-color: #e67600;
+    color: #fff;
+}
+
+.btn-orange:disabled,
+.btn-orange[disabled] {
+    background-color: #FF8800;
+    border-color: #FF8800;
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.btn-orange-s {
+    color: #fff;
+    background-color: #FF8800;
+    border-color: #FF8800;
+}
+
+.btn-orange-s:hover {
+    background-color: #d17000;
+    border-color: #d17000;
+}
+
+/* Success colors */
+.bg-success {
+    background-color: rgb(41 205 53) !important;
+}
+
+/* NAV */
+.nav-pc {
+    display: none;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 999px) {
+    .nav-pc {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.line {
+    width: 100px;
+    height: 2px
+}
