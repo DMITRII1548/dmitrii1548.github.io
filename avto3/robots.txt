@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /README.md
+Disallow: /readme.md
+Disallow: /index.html
+Allow: /
+
+Sitemap: https://vskritieavto.kz/sitemap.xml
