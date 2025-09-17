@@ -131,3 +131,10 @@ a.text-orange:hover {
 .swiper-button-next, .swiper-button-prev {
     color: #FF8800;
 }
+
+/* Site name text */
+@media screen and (max-width: 348px) {
+    .site-name-text {
+        display: none !important;
+    }
+}
