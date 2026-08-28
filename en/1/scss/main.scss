@@ -1,0 +1,23 @@
+// Base 
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/base';
+
+// Blocks
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/btn';
+@import './blocks/form';
+@import './blocks/about';
+@import './blocks/video';
+@import './blocks/benefits';
+@import './blocks/benefit';
+@import './blocks/popular-ways';
+@import './blocks/popular-tour';
+@import './blocks/blog';
+@import './blocks/blog-post';
+@import './blocks/gallery';
+@import './blocks/subscribe';
+@import './blocks/footer';
+@import './blocks/footer-list'

@@ -1,0 +1,128 @@
+.nav {
+    display: grid;
+    grid-template-areas: "logo list list list list btn";
+
+    
+    @include mediaLaptop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav__logo {
+    grid-area: logo;
+    column-gap: 49px;
+
+    @include mediaLaptop {
+        width: 84px;
+        height: 44px;
+    }
+}
+
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 24px;
+
+    grid-area: list;
+
+    @include mediaLaptop {
+        display: none;
+    }
+}
+
+.nav__list--mobile {
+    @include mediaLaptop {
+        display: grid;
+        justify-items: start;
+
+        row-gap: 16px;
+
+        z-index: 9999;
+
+        margin-top: 50px;
+
+        &::before {
+            background-color: $footerBg;
+            content: "";
+            position: absolute;
+
+            overflow: hidden;
+
+            top: 0;
+            left: 0;
+
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        .nav__link {
+            position: relative;
+            padding-left: 18px;
+
+            font-size: 14px;
+            line-height: 1.28571;
+
+            transition: all 0.2s ease-in;
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 9999;
+
+                width: 6px;
+                height: 10px;
+
+                top: 4px;
+                left: 0;
+
+                background-image: url("./../img/footer/decor.svg");
+            }
+
+            &:hover {
+                text-decoration: underline;
+
+                &::before {
+                    background-image: url("./../img/footer/decor-hover.svg");
+                }
+            }
+        }
+    }
+}
+
+.nav__link {
+    font-size: 18px;
+    font-weight: 600;
+
+    color: $white;
+}
+
+.nav__btn {
+    grid-area: btn;
+
+    justify-self: right;
+    align-self: center;
+
+    @include mediaLaptop {
+        display: none;
+    }
+}
+
+.nav__menu {
+    display: none;
+    cursor: pointer;
+
+    @include mediaLaptop {
+        display: block;
+    }
+}
+
+.nav__menu--active {
+    position: absolute;
+    z-index: 9999;
+
+    top: 16px;
+    right: 16px;
+}

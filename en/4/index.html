@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoftHouse — Residential Complex</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="header__top">
+            <div class="container">
+               <div class="header__top-row">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="LoftHouse">
+                    </a>
+                    <div class="header__nav">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li><a href="#">About the complex</a></li>
+                                <li><a href="#">District</a></li>
+                                <li><a href="#">Apartment catalog</a></li>
+                                <li><a href="#">Mortgage</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__nav-btn">
+                        <button class="nav-icon-btn">
+                            <div class="nav-icon"></div>
+                        </button>
+                    </div>
+               </div>
+            </div> 
+        </div>
+        <div class="container">
+            <h1 class="header__title">Residential complex <br>
+            in the historical center
+                <a href="#benefits"><img src="./img/header/mouse.svg" alt="Scroll down" class="header__title-icon"></a>
+            </h1>
+        </div> 
+        <div class="header__footer">
+            <div class="text-right">
+                <a href="#section-map" class="info info--map">10-15 Fontanka River Embankment</a>
+            </div>
+            <div class="text-left">
+                <a href="tel:+78121234567" class="info info--tel">8 (812) 123-45-67</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="benefits" id="benefits">
+            <h2 class="visually-hidden">Advantages of the residential complex</h2>
+            <div class="container container--sm">
+                <div class="benefits__row">
+                    <div class="benefits__item">
+                        <img src="./img/benefits/bench.svg" alt="Parks" class="benefits__item-img">
+                        <p class="benefits__item-text">Nearby historical parks and gardens</p>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./img/benefits/building.svg" alt="Furnishing" class="benefits__item-img">
+                        <p class="benefits__item-text">Fully furnished</p>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./img/benefits/fountain.svg" alt="Fountains" class="benefits__item-img">
+                        <p class="benefits__item-text">10 fountains on the territory</p>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./img/benefits/bicycle.svg" alt="Bike paths" class="benefits__item-img">
+                        <p class="benefits__item-text">6 km of bike paths</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="apartaments" id="apartaments">
+            <div class="container">
+                <div class="apartaments__title">
+                    <h2 class="title-2">Our apartments</h2>
+                </div>
+                <div class="apartaments__cards">
+                    <a href="#" class="card">
+                        <img class="card__img" src="./img/cards/01.jpg" alt="Penthouse “Loft Olymp”">
+                        <h3 class="card__title">Penthouse “Loft Olymp”</h3>
+                        <p class="card__price">from $1 500 000</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img class="card__img" src="./img/cards/02.jpg" alt="Apartments “Nice Loft”">
+                        <h3 class="card__title">Apartments “Nice Loft”</h3>
+                        <p class="card__price">from $700 000</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img class="card__img" src="./img/cards/03.jpg" alt="Apartments “Loft Studio”">
+                        <h3 class="card__title">Apartments “Loft Studio”</h3>
+                        <p class="card__price">from $500 000</p>
+                    </a>
+                    <a href="#" class="card">
+                        <img class="card__img" src="./img/cards/04.jpg" alt="Loft apartment “Prestige”">
+                        <h3 class="card__title">Loft apartment “Prestige”</h3>
+                        <p class="card__price">from $1 100 000</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta__title">
+                    <h2 class="title-2">
+                        Would you like to see?
+                    </h2>
+                </div>
+                <div class="cta__wrapper">
+                    <div class="cta__text"><p>LoftHouse residential complex is a business-class project located in the city center, at 10-15 Fontanka River Embankment. The complex offers its residents apartments ranging from 40 to 170 sq. m. The building will have three sections, housing only 56 apartments.</p></div>
+                    <form action="#" class="cta__form form">
+                        <input type="text" name="name" placeholder="Your name" class="form__input" autocomplete="off">
+                        <input type="text" name="phone" placeholder="Your phone" class="form__input" autocapitalize="off" data-tel-input>
+                        
+                        <p class="form__privacy form__privacy--bottom">
+                            *We do not share your data with anyone. <br>
+                            And we do not store your number in a database.
+                        </p>
+                        <button type="submit" class="form__btn">View the area</button>
+                    </form>
+                </div>
+            
+            </div>
+        </section>
+        <section class="video" id="video">
+            <h2 class="visually-hidden">Video about LoftHouse residential complex</h2>
+            <div class="container">
+                <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" class="video__link" data-youtubeLightbox>
+                    <img src="./img/video/play.svg" alt="Play" class="video__icon">
+                    <img src="./img/video/video-img.jpg" alt="Video preview" class="video__img">
+                </a>
+            </div>
+        </section>
+        <section class="section-map" id="section-map">
+            <div class="container">
+                <div class="section-map__title">
+                    <h2 class="title-2">District on the map</h2>
+                </div>
+                <div class="section-map__map">
+                    <div class="map" id="map"></div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__title">
+                    <h2 class="title-2">Have questions?</h2>
+                </div>
+
+                <form class="feedback__form form">
+
+                        <p class="form__privacy form__privacy--bottom">
+                            *We do not share your data with anyone. <br>
+                            And we do not store your number in a database.
+                        </p>
+
+                        <input type="text" name="name" placeholder="Your name" class="form__input" autocomplete="off">
+                        <input type="text" name="phone" placeholder="Your phone" class="form__input" autocapitalize="off" data-tel-input>
+        
+                        <button type="submit" class="form__btn">View the area</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="LoftHouse">
+                    </a>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><a href="#">About the complex</a></li>
+                            <li><a href="#">District</a></li>
+                            <li><a href="#">Apartment catalog</a></li>
+                            <li><a href="#">Mortgage</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Settlement and relocation</a></li>
+                            <li><a href="#">Service services</a></li>
+                            <li><a href="#">Environmental sustainability</a></li>
+                            <li><a href="#">Investment opportunities</a></li>
+                            <li><a href="#">Loyalty program</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__address">
+                    <ul class="footer__nav-list">
+                        <li>Address: 10-15 Fontanka River Embankment</li>
+                        <li>Phone: <a href="tel:+78121234567">8 (812) 123-45-67</a></li>
+                        <li>Sales department: 10:00 - 20:00</li>
+                        <li>E-mail: <a class="link-bold" href="mailto:vip@lofthouse.ru">vip@lofthouse.ru</a></li>
+                    </ul>
+                    <ul class="footer__socials">
+                        <li><img src="./img/socials/youtube.svg" alt="YouTube"></li>
+                        <li><img src="./img/socials/vk.svg" alt="VKontakte"></li>
+                        <li><img src="./img/socials/facebook.svg" alt="Facebook"></li>
+                        <li><img src="./img/socials/instagram.svg" alt="Instagram"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=53ed891f-ebdc-4220-a7ec-e2ac9d0b0c3c&lang=ru_RU"></script>
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

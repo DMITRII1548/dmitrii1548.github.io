@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap');
+
+body {
+    font-family: $fontMontserrat, sans-serif;
+    color: $bodyBlack;
+    line-height: 1.5;
+}
+
+a {
+    color: $bodyBlack;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: $headBlack;
+
+    @include mediaTablet {
+        font-size: 40px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: $headBlack;
+
+    @include mediaTablet {
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $headBlack;
+
+    @include mediaTablet {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $headBlack;
+
+    @include mediaTablet {
+        font-size: 17px;
+    }
+}
+
+.title-reg {
+    font-weight: 400;
+}
+
+.txt-bold {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.txt {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.caption {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.caption-bold {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.container {
+    padding-left: 351px;
+    padding-right: 351px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1919px) {
+        padding-left: 340px;
+        padding-right: 340px;        
+    }
+
+    @media screen and (max-width: 1900px) {
+        padding-left: 310px;
+        padding-right: 310px;
+
+    }
+
+    @media screen and (max-width: 1800px) {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    @media screen and (max-width: 1760px) {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    @media screen and (max-width: 1700px) {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    @media screen and (max-width: 1630px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @include mediaLaptopL {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    @include mediaLaptop {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    @include mediaTablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.none {
+    display: none !important;
+}

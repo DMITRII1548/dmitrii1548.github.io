@@ -1,0 +1,168 @@
+.form {
+    display: grid;
+
+    @include mediaTablet {
+        width: auto;
+
+        max-width: 320px;
+        min-width: 280px;
+    }
+}
+
+.form__inputs {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 792px;
+
+    @include mediaTablet {
+        grid-template-columns: 1fr;
+        width: 100%;
+
+        max-width: 319px;
+        min-width: 280px;
+    }
+}
+
+.form__label {
+    position: absolute;
+    background-image: url('./../imgs/form/required-icon.svg');
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 0;
+
+    &--1 {
+        top: 13px;
+        left: 286px;
+
+        @include mediaTablet {
+            top: 13px;
+            left: 286px;
+        }
+
+        @media screen and (max-width: 330px) {
+                left: 268px;
+        }
+    }
+
+    &--2 {
+        top: 13px;
+        left: 755px;
+
+        @include mediaTablet {
+            top: 87px;
+            left: 265px;
+        }
+    }
+
+    &--3 {
+        top: 85px;
+        left: 155px;
+
+        @include mediaTablet {
+            top: 165px;
+        }
+    }
+
+    &--4 {
+        top: 85px;
+        left: 665px;
+
+        @include mediaTablet {
+            top: 240px;
+            left: 255px;
+        }
+    }
+}
+
+.form__input {
+    position: relative;
+    font-family: $fontMontserrat;
+    font-size: 17px;
+    font-weight: 700;
+    height: 52px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 13px 16px;
+    color: $inputText;
+
+    &::placeholder {
+        font-family: $fontMontserrat;
+        font-size: 17px;
+        font-weight: 700;
+        color: $inputText;
+        content: "";
+
+        @include mediaTablet {
+            font-weight: 400;
+        }
+    }
+
+    @include mediaTablet {
+        min-width: 280px;
+        max-width: 319px;
+    }
+}
+
+.form__title {
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+    @include mediaTablet {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+}
+
+.form__politics {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include mediaTablet {
+        flex-direction: column;
+    }
+
+    &>.btn {
+        @include mediaTablet {
+            width: 319px;
+        }
+
+        @include mediaMobile {
+            width: 280px;
+        }
+    }
+}
+
+.form__text {
+    width: 312px;
+    color: $caption;
+
+    @include mediaTablet {
+        width: auto;
+        max-width: 312px;
+        min-width: 270px;
+    }
+}
+
+.form__link {
+    background: linear-gradient(209deg, #F59C36 30.9%, #DB8C30 87.78%);
+    background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    &:hover {
+        background: linear-gradient(209deg, #D98A2E 30.9%, #DB8C30 87.78%);
+        background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+
+    &:active {
+        background: linear-gradient(209deg, #FE8A05 30.9%, #DB8C30 87.78%);
+        background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+}

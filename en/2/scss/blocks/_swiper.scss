@@ -1,0 +1,166 @@
+.slider-wrapper {
+    position: relative !important;
+    width: 1346px;
+    margin: 0 auto;
+
+    @include mediaLaptop {
+        width: 900px;
+    }
+    
+    @include mediaTablet {
+        max-width: 1200px;
+        min-width: 200px;
+        width: 700px;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 700px;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 600px;
+    }
+
+    @media screen and (max-width: 650px) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 450px;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 310px;
+    }
+
+    @media screen and (max-width: 350px) {
+        width: 310px;
+    }
+}
+
+.swiper {
+    width: 1218px;
+    height: 550px;
+
+    @include mediaLaptop {
+        width: 800px;
+        height: 460px;
+    }
+
+    @include mediaTablet {
+        width: 100%;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 384px;
+    height: 550px;
+    object-fit: cover;
+
+    @include mediaLaptop {
+        width: 310px;
+        height: 460px;
+    }
+}
+
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    left: 0;
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-image: url('./../imgs/swiper/prew-def.svg');
+        opacity: 1;
+    }
+
+    &:hover {
+        &::after {
+            background-image: url('./../imgs/swiper/prev-hover.svg');
+        }
+    }
+
+    &:active {
+        &::after {
+            background-image: url('./../imgs/swiper/prev-active.svg');
+        }        
+    }
+}
+
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    right: 0;
+
+    &::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-image: url('./../imgs/swiper/prew-def.svg');
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+
+    &:hover {
+        &::after {
+            background-image: url('./../imgs/swiper/prev-hover.svg');
+        }
+    }
+
+    &:active {
+        &::after {
+            background-image: url('./../imgs/swiper/prev-active.svg');
+        }        
+    }
+}
+
+.swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    @include mediaTablet {
+        display: none;
+    }
+}
+
+.swiper-pagination {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+        transform: translate(0, 40px);
+    }
+}
+
+.swiper-pagination-bullet {
+    background: #e0e0e0;
+    opacity: 1;
+
+    &-active {
+        background-color: #000;
+    }
+}

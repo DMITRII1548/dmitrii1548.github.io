@@ -1,0 +1,160 @@
+.card {
+    height: 440px;
+
+    &--2 {
+        background: #f9f9f9;
+
+        height: 680px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        &.card__img {
+            z-index: 0;
+        }
+
+        @include mediaTablet {
+            background: #fff;
+            height: 630px;
+            padding-top: 64px;
+        }
+    }
+
+    @include mediaTablet {
+        height: 574px;
+        width: 319px;
+        padding-right: 12px;
+    }
+}
+
+.card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    position: relative;
+    z-index: 9;
+
+    height: 100%;
+
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.05), 0px 32px 32px 0px rgba(0, 0, 0, 0.04), 0px 72px 43px 0px rgba(0, 0, 0, 0.03), 0px 128px 51px 0px rgba(0, 0, 0, 0.01), 0px 200px 56px 0px rgba(0, 0, 0, 0.00), 0px 0px 18px 0px rgba(0, 0, 0, 0.03);
+    
+    @include mediaTablet {
+        flex-direction: column-reverse;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: #F59C36;
+            width: 100%;
+            height: 226px;
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &--1 {
+        padding-top: 65px;
+        padding-bottom: 25px;
+        padding-left: 68px;
+        padding-right: 38px;
+
+        &::after {
+            margin-top: -35px;
+        }
+
+        @include mediaTablet {
+            padding: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 768px;
+        height: 100%;
+        background-image: url('./../imgs/card/bg.jpg');
+        z-index: 0;
+    }    
+
+    &--2 {
+        padding-left: 64px;
+        height: 440px;
+
+        &>.card__img {
+            position: absolute;
+            height: 440px;
+            max-width: 653px;
+            right: 0;
+
+            @include mediaTablet {
+                height: 226px;
+                width: 250px;
+                top: 0;
+                right: 20px;
+            }
+        }
+
+        &>.card__info {
+            width: 497px;
+
+            @include mediaLaptop {
+                width: 437px;
+            }
+
+            @include mediaTablet {
+                width: auto;
+            }
+        }
+
+        @include mediaTablet {
+            padding: 0;
+            height: 630px;
+        }
+    }
+
+}
+
+.card__info {
+    display: grid;
+    width: 447px;
+    z-index: 9;
+
+    @include mediaTablet {
+        width: auto;
+        padding-left: 24px;
+        padding-bottom: 28px;
+    }
+}
+
+.card__text {
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    @include mediaTablet {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+.card__btn {
+    width: 140px;
+}
+
+.card__img {
+    z-index: 9;
+
+    @include mediaTablet {
+        width: 323px;
+        height: 196px;
+
+        margin-top: 22px;
+    }
+}

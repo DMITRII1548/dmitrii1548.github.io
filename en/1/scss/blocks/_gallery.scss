@@ -1,0 +1,100 @@
+.gallery {
+    display: grid;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    @include mediaLaptop {
+        gap: 32px;
+    }
+}
+
+.gallery__titles {
+    display: grid;
+    row-gap: 8px;
+
+    text-align: center;
+    width: 100%;
+
+    @include mediaLaptop {
+        text-align: left;
+    }
+}
+
+.gallery__cards {
+    display: grid;
+
+    grid-template-areas: "img1 img1 img2 img3"
+        "img4 img5 img5 img6";
+    gap: 20px;
+
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    @include mediaLaptop {
+        display: flex;
+
+        overflow-x: auto;
+        margin: 0;
+    }
+}
+
+
+.gallery__img {
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    border-radius: 6px;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    transition: scale 0.2s ease-in;
+
+    @include mediaLaptop {
+        min-width: 280px;
+        height: 250px;
+
+        object-fit: cover;
+        object-position: 1;
+
+        vertical-align: middle;
+
+        overflow: hidden;
+    }
+
+    &:hover { 
+        scale: 1.1;
+    }
+}
+
+.gallery__img--1 {
+    grid-area: img1;
+}
+
+.gallery__img--2 {
+    grid-area: img2;
+}
+
+.gallery__img--3 {
+    grid-area: img3;
+}
+
+.gallery__img--4 {
+    grid-area: img4;
+}
+
+.gallery__img--5 {
+    grid-area: img5;
+}
+
+.gallery__img--6 {
+    grid-area: img6;
+}
+
+.gallery__btn {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}

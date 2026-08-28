@@ -1,0 +1,42 @@
+.who-needs {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding-right: -220px;
+
+    @include mediaLaptopL {
+        flex-direction: column-reverse;
+        padding-right: 0;
+    }
+
+    @include mediaTablet {
+        padding-bottom: 64px;
+    }
+}
+
+.who-needs__info {
+    display: grid;
+    row-gap: 40px;
+    width: 654px;
+
+    @include mediaTablet {
+        max-width: 550px;
+        min-width: 200px;
+
+        row-gap: 24px;
+
+        width: auto;
+    }
+}
+
+.who-needs__btn {
+    width: 160px;
+}
+
+.who-needs__img {
+    margin-right: -220px;
+
+    @include mediaLaptopL {
+        margin-right: 0;
+    }
+}

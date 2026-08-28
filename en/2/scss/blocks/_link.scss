@@ -1,0 +1,11 @@
+.link {
+    @extend .caption;
+
+    &:hover {
+        color: $caption;
+    }
+
+    &:active {
+        color: $headBlack;
+    }
+}
